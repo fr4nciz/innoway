@@ -8304,7 +8304,7 @@ a.article {
     padding: 10px 0; } }
 @media only screen and (max-width: 768px) {
   .mghome {
-    margin-top: 0 !important; }
+    margin-top: 3rem !important; }
 
   header.small {
     position: relative; }
