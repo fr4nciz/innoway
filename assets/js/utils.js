@@ -1,11 +1,13 @@
-// $(document).on("scroll", function () {
-// 	if ($(document).scrollTop() > 100) {
-// 		$("header").addClass("small");
+$(document).on("scroll", function () {
+	if ($(document).scrollTop() > 100) {
+		$("header").addClass("small");
+        $('.home').addClass("mghome");
 	
-// 	} else {
-// 		$("header").removeClass("small");
-// 	}
-// });
+	} else {
+		$("header").removeClass("small");
+        $('.home').removeClass("mghome");
+	}
+});
 
 $(document).ready(function () {
 	$('#sidebarCollapse').on('click', function () {
