@@ -1,0 +1,133 @@
+@mixin box-sizing($val) {
+   -webkit-box-sizing: $val;
+      -moz-box-sizing: $val;
+           box-sizing: $val;
+}
+
+@mixin border-radius($radius) {
+   -webkit-border-radius: $radius;
+      -moz-border-radius: $radius;
+       -ms-border-radius: $radius;
+           border-radius: $radius;
+}
+
+@mixin transition($value1, $value2) {
+   -webkit-transition: $value1 $value2;
+      -moz-transition: $value1 $value2;
+        -o-transition: $value1 $value2;
+           transition: $value1 $value2;
+}
+
+@mixin scale($val) {
+  -webkit-transform: scale($val);
+     -moz-transform: scale($val);
+       -o-transform: scale($val);
+          transform: scale($val);
+}
+
+@mixin rotate($val) {
+   -webkit-transform: rotate($val);
+      -moz-transform: rotate($val);
+       -ms-transform: rotate($val);
+        -o-transform: rotate($val);
+           transform: rotate($val);
+}
+
+@mixin opacity($opacity) {
+  -webkit-opacity: $opacity;
+     -moz-opacity: $opacity;      
+          opacity: $opacity;
+}
+
+@mixin translateX($translateX) {
+	    -ms-transform: translateX($translateX); 
+	-webkit-transform: translateX($translateX); 
+			  transform: translateX($translateX);		
+}
+
+@mixin translateY($translateY) {
+	    -ms-transform: translateY($translateY); 
+	-webkit-transform: translateY($translateY); 
+			  transform: translateY($translateY);		
+}
+
+@mixin animation($val1, $val2, $val3) {
+   -webkit-animation: $val1 $val2 $val3; 
+      -moz-animation: $val1 $val2 $val3; 
+        -o-animation: $val1 $val2 $val3; 
+           animation: $val1 $val2 $val3;         
+}
+
+@function calculateRem($size) {
+   $remSize: $size / 16px;
+   @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+   font-size: $size;
+   font-size: calculateRem($size);
+}
+
+.own-report {
+   --logo: url(../img/innoway-logo-own.svg);
+   --lupa: url(../img/lupa-own.svg);
+   --innovation-title: url(../img/innovation-title-own.svg);
+   --infinito-score: url(../img/infinito-score-full-own.svg);
+   --increasing: url(../img/increasing-own.svg);
+   --grafico-coletivo: url(../img/grafico-coletivo.svg);
+   --data: url(../img/data-own.svg);
+   --innpedia: url(../img/innopedia.svg);
+   --logo-name: url(../img/logo-name.jpeg);
+   --grafico-white-81: url(../graficos/meia_pizza/81m.svg);
+   --grafico-81: url(../graficos/meia_pizza_branco/81n.svg);
+   --barra-grafica: url(../graficos/Barras/barras_ACATE_cinza@2x.png);
+   --graphic-spider: url(../graficos/spider/aranha_ACATE_cinza@2x.png);
+   --planilha-1: url(../graficos/planilha/acate_1.png);
+   --planilha-2: url(../graficos/planilha/acate_2.png);
+   --planilha-3: url(../graficos/Barras/acate_4.png);
+   --planilha-4: url(../graficos/Barras/acate_3.png);
+   --grafico-60: url(../graficos/meia_pizza/60m.svg);
+   --grafico-64-meio: url(../graficos/meia_pizza/64m.svg);
+   --planilha-5: url(../graficos/Barras/formacao_academica_grafico.png);
+   --planilha-6: url(../graficos/pizza/acate_6.png);
+   --grafico-65: url(../graficos/meia_pizza/65m.svg);
+   --bullet-color: #d8702a;
+   --circle: url(../img/circle.png);
+   --primary-font-color: #F26B40;
+   --pessoas-font-color: #F58B40;
+   --flow-font-color: #F05F40;
+   --lg-pad-left: 49px;
+   --lg-pad-top: 30px;
+   fill: #f58b40;
+}
+
+.partner-report {
+   --logo: url(../img/innoway-logo-partner.svg);
+   --lupa: url(../img/lupa-partner.svg);
+   --innovation-title: url(../img/innovation-title-partner.svg);
+   --infinito-score: url(../img/infinito-score-full-own.svg);
+   --increasing: url(../img/increasing-partner.svg);
+   --data: url(../img/data-partner.svg);
+   --innpedia: url(../img/innopedia.svg);
+   --grafico-81: url(../graficos/meia_pizza_branco/81n.svg);
+   --grafico-75: url(../graficos/meia_pizza_branco/75n.svg);
+   --grafico-white-81: url(../graficos/meia_pizza/81m.svg);
+   --barra-grafica: url(../graficos/Barras/barras_ACATE_cinza@2x.png);
+   --graphic-spider: url(../graficos/spider/aranha_ACATE_cinza@2x.png);
+   --grafico-64: url(../graficos/pizza/64.svg);
+   --planilha-1: url(../graficos/planilha/acate_1.png);
+   --circle: url(../img/circle.png);
+   --planilha-3: url(../graficos/Barras/acate_4.png);
+   --planilha-4: url(../graficos/Barras/acate_3.png);
+   --planilha-5: url(../graficos/Barras/formacao_academica_grafico.png);
+   --planilha-6: url(../graficos/pizza/acate_6.png);
+   --grafico-65: url(../graficos/meia_pizza/65m.svg);
+   --grafico-60: url(../graficos/meia_pizza/60m.svg);
+   --menu: url(../img/menu.png);
+   --bullet-color: #AECA2C;
+   --primary-font-color: #AECA2C;
+   --pessoas-font-color: #AECA2C;
+   --flow-font-color: #8FA720;
+   --lg-pad-left: 23px;
+   --lg-pad-top: 50px;
+}

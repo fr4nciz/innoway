@@ -1,0 +1,48 @@
+
+
+
+
+$mobile: "only screen and (max-width : 768px)";
+$tablet: "only screen and (max-width : 960px)";
+$desktop: "only screen and (min-width : 960px)";
+
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Montserrat, Arial, Helvetica, sans-serif, sans-serif;
+    --fluente-color: #0BACD3;
+    --avancado-color:#0F7B17;
+    --intermediario-color:#fce700;
+    --basico-color:#E5320C;
+}
+
+
+
+:root {
+    --white: #FFF;
+    --black-400: #484747;
+    --black-800: #333333;
+
+    --black-200:rgba(51, 51, 51, 0.95);
+  
+  
+    --orange-400: #F58B40; 
+    --orange-800: #F05F40;
+
+    --green-400:#AECA2C;
+
+    --gray-600:#707070;
+
+    --gray-400:#E5E5E5;
+
+    --gray-200:#EFEFEF;
+
+  
+
+
+  }
+

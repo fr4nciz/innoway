@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Collapsible sidebar using Bootstrap 4</title>
+
+    <!-- Our Custom CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,500,800" el='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Font Awesome JS -->
+
+
+</head>
+
+<body class="own-report">
+
+    <div class="container">
+
+        <div class="wrapper">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar" class="sidebar_r">
+                <button class="fechar-menu">×</button>
+                <div class="sidebar-header mt-4 mb-2">
+                    <img class="logo img-fluid" src="assets/imgs/logo.png">
+                </div>
+
+                <div class="search d-xl-none m-3">
+                    <input class="field-search pl-1" type="text" placeholder="Pesquisar Innopedia">
+                    <button class="lupa"></button>
+                </div>
+
+                <ul class="list-unstyled components">
+
+                    <li>
+                        <a href="#">RESULTADO</a>
+                    </li>
+
+                    <li>
+                        <a href="#">RECOMENDAÇÕES</a>
+                    </li>
+
+
+                    <li>
+                        <a href="#sub1" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">PESSOAS</a>
+                        <ul class="show collapse list-unstyled" id="sub1">
+                            <li>
+                                <a href="#">• Intraempreendedorismo</a>
+                            </li>
+                            <li>
+                                <a href="#">• Adaptabilidade</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">DNA PARA INOVAÇÃO</a>
+                    </li>
+
+
+
+                    <li>
+                        <a href="#sub2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">FLOW DE
+                            INOVAÇÃO</a>
+                        <ul class="show collapse list-unstyled" id="sub2">
+                            <li>
+                                <a href="#">• Estratégia & Liderança</a>
+                            </li>
+                            <li>
+                                <a href="#">• Inteligência & Ideação</a>
+                            </li>
+
+                            <li>
+                                <a href="#">• Desenvolvimento & Gestão</a>
+                            </li>
+
+                            <li>
+                                <a href="#">• Resultado & Impacto</a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#">VETORES DE INOVAÇÃO</a>
+                    </li>
+
+
+                    <li>
+                        <a href="#sub3" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">ANÁLISE
+                            BENCHMARK</a>
+                        <ul class="show collapse list-unstyled" id="sub3">
+                            <li>
+                                <a href="#">• Innoway <span>(em breve)</span></a>
+                            </li>
+                            <li>
+                                <a href="#">• Setorial <span>(em breve)</span></a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="active">
+                        <a href="#">INNOPEDIA</a>
+                    </li>
+
+                    <li>
+                        <a href="#">DEMOGRÁFICOS</a>
+                    </li>
+
+                    <li>
+                        <a href="#">CONFIABILIDADE &
+                            METODOLOGIA</a>
+                    </li>
+
+
+
+
+
+
+                    <li>
+                        <a href="#sub4" data-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle">DOWNLOADS</a>
+                        <ul class="show collapse list-unstyled" id="sub4">
+                            <li>
+                                <a href="#">Apresentação Resultados</a>
+                            </li>
+                            <li>
+                                <a href="#">DATABASE <span>(perguntas abertas)</span> </a>
+                            </li>
+                            <li>
+                                <a href="#">selo ACATE Innoway</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+            <!-- Page content  -->
+            <div id="content">
+
+                <header>
+
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
+                    <button class="bt-data">
+                        Dados >
+                    </button>
+
+                    <div class="header-content">
+                        <button class="fechar-h">×</button>
+
+                        <div>
+                            <img src="assets/imgs/company-logo.svg">
+                        </div>
+                        <div class="box-header">
+                            <div class="innovation-header">
+                                <span>Innovation Power</span>
+                                <p>avançado</p>
+                            </div>
+                            <div class="score-header">
+                                <span>75</span>
+                                <p>score</p>
+                            </div>
+                        </div>
+                        <div class="box-header">
+                            <div class="peaple-header">
+                                <span>pessoas</span><span>77%</span>
+                            </div>
+                            <div class="flow-header">
+                                <span>flow de inovação</span><span>64%</span>
+                            </div>
+                        </div>
+                        <div>
+                            <img onclick="javascript:changeOwner();" src="assets/imgs/logout.svg" alt="">
+                        </div>
+
+                        <div class="search d-none d-xl-block">
+                            <input class="field-search" type="text" placeholder="Pesquisar Innopedia">
+                            <button class="lupa"></button>
+                        </div>
+                    </div>
+                </header>
+
+                <section class="home rounded-3 mt-5">
+                    <div class="row">
+                        <div class="container-fluid">
+                            <div class="rounded-3 log-home">
+                                <article class="main-header">
+                                    <figure class="innovation-title">
+                                        <img src="assets/imgs/innovation-title-own.svg" class="img-fluid p-3">
+                                    </figure>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-xs-12 p-4">
+                                <p class="score-level-section-one">Avançado</p>
+                                <div class="pontuacao-content">
+                                    <div class="pontuacao-section-one">
+                                        <p><strong>PONTUAÇÃO</strong><br> entre <strong>71</strong> a
+                                            <strong>87</strong>
+                                            pontos
+                                        </p>
+                                        <br>
+                                        <p><strong>DATA DE APLICAÇÃO</strong><br>Julho 2021</p>
+                                    </div>
+                                    <div class="score-section-one">
+                                        <span>71</span>
+                                        <p>score</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-xs-12 p-4">
+                                <img src="assets/imgs/logo-name.jpeg" class="img-fluid mt-4">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-xs-12 p-4">
+                                <div>
+                                    <p class="header-text-section-one">Conceitos</p>
+                                    <p class="title-text-section-one">pessoas</p>
+                                    <p class="text-section-one">Baseada no conceito AGILE, demonstra o equilíbrio da
+                                        tríade
+                                        RESULTADO, RELACIONAMENTO e APRENDIZADO. Somada ao poder
+                                        da DIVERSIDADE, indica a agilidade para se adaptar às rápidas e constantes
+                                        mudanças e
+                                        evoluções do ambiente externo.</p>
+                                    <p class="title-text-section-one">flow de inovação</p>
+                                    <p class="text-section-one">A inovação se tornou sinônimo de relevância e
+                                        longevidade para
+                                        as organizações. Neste contexto, é necessário ir além da
+                                        criatividade e do desenvolvimento orgânico. Para ser competitivo, é
+                                        importante
+                                        gerir o
+                                        “Inovar” como uma ciência
+                                        organizada e
+                                        estruturada. O Flow, detalhado aqui, traz uma abordagem sustentável para que
+                                        organizações possam evoluir sua cultura de
+                                        inovação com métricas e resultados consistentes.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-xs-12 p-4 text-center">
+
+                                <div class="txt-inf">
+                                    <h3>PESSOAS </h3>
+
+                                    <h3>FLOW DE <br />
+                                        INOVAÇÃO</h3>
+
+                                </div>
+                                <img src="assets/imgs/infiniy-score.png" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section class="section two">
+                    <article class="second-header">
+                        <div>
+                            <h2>MATURIDADE DE INOVAÇÃO POR INDICADOR</h2>
+                        </div>
+
+                        <div class="maturidade fluente line">
+                            <div>
+                                <span>FLUENTE</span>
+                                <p>de 88 pontos em diante</p>
+                            </div>
+                            <div class="margem-maturidade">
+                                <div class="areas">INTRAEMPREENDEDORISMO</div>
+                                <div class="areas">ADAPTABILIDADE</div>
+                                <div class="areas">ESTRATÉGIA &amp; LIDERANÇA</div>
+                                <div class="areas">RESULTADO &amp; IMPACTO</div>
+                                <div class="areas">DESENVOLVIMENTO &amp; GESTÃO</div>
+                                <div class="areas">INTELIGÊNCIA &amp; IDEAÇÃO</div>
+                            </div>
+                        </div>
+                        <div class="maturidade avancado line">
+                            <div>
+                                <span>AVANÇADO</span>
+                                <p>de 71 a 87 pontos</p>
+                            </div>
+                            <div class="margem-maturidade">
+                                <div class="areas">INTRAEMPREENDEDORISMO</div>
+                                <div class="areas">ADAPTABILIDADE</div>
+                                <div class="areas">ESTRATÉGIA &amp; LIDERANÇA</div>
+                                <div class="areas">RESULTADO &amp; IMPACTO</div>
+                                <div class="areas">DESENVOLVIMENTO &amp; GESTÃO</div>
+                                <div class="areas">INTELIGÊNCIA &amp; IDEAÇÃO</div>
+                            </div>
+                        </div>
+                        <div class="maturidade intermediario line">
+                            <div>
+                                <span>INTERMEDIÁRIO</span>
+                                <p>de 41 a 70 pontos</p>
+                            </div>
+                            <div class="margem-maturidade">
+                                <div class="areas">INTRAEMPREENDEDORISMO</div>
+                                <div class="areas">ADAPTABILIDADE</div>
+                                <div class="areas">ESTRATÉGIA &amp; LIDERANÇA</div>
+                                <div class="areas">RESULTADO &amp; IMPACTO</div>
+                                <div class="areas">DESENVOLVIMENTO &amp; GESTÃO</div>
+                                <div class="areas">INTELIGÊNCIA &amp; IDEAÇÃO</div>
+                            </div>
+                        </div>
+                        <div class="maturidade basico">
+                            <div>
+                                <span>BÁSICO</span>
+                                <p>até 40 pontos</p>
+                            </div>
+                            <div class="margem-maturidade">
+                                <div class="areas">INTRAEMPREENDEDORISMO</div>
+                                <div class="areas">ADAPTABILIDADE</div>
+                                <div class="areas">ESTRATÉGIA &amp; LIDERANÇA</div>
+                                <div class="areas">RESULTADO &amp; IMPACTO</div>
+                                <div class="areas">DESENVOLVIMENTO &amp; GESTÃO</div>
+                                <div class="areas">INTELIGÊNCIA &amp; IDEAÇÃO</div>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+
+                <section class="section three">
+                    <article class="third-header col-lg-12">
+                        <div>
+                            <h2>PESSOAS</h2>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-xs-12">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-12 col-xs-12 graf">
+                                        <div class="bb-top box-top-1">
+                                            <div class="header-meia-pizza">
+                                                <p><strong>INTRAEMPREENDEDORISMO</strong></p>
+                                                <p><small>(INDIVÍDUO)</small></p>
+                                            </div>
+                                            <div class="meia-pizza">
+                                                <figure>
+                                                    <img src="assets/graficos/meia_pizza_branco/81n.svg"
+                                                        class="img-fluid">
+                                                </figure>
+                                            </div>
+                                        </div>
+                                        <div class="bb-bottom box-bottom-1">
+                                            <div class="score-meia-pizza">AVANÇADO</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12 col-xs-12 graf">
+                                        <div class="bb-top box-top-1">
+                                            <div class="header-meia-pizza">
+                                                <p><strong>ADAPTABILIDADE</strong></p>
+                                                <p><small>(COLETIVO)</small></p>
+                                            </div>
+                                            <div class="meia-pizza">
+                                                <figure>
+                                                    <img src="assets/graficos/meia_pizza_branco/75n.svg"
+                                                        class="img-fluid">
+                                                </figure>
+                                            </div>
+                                        </div>
+                                        <div class="bb-bottom box-bottom-1">
+                                            <div class="score-meia-pizza">AVANÇADO</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-xs-12 text-center">
+                                        <button class="bt-detalhes mt-4">VER EM DETALHES</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-xs-12">
+
+                                <div class="bb-full">
+                                    <div class="header-grafico">
+                                        <p class="mb12"><strong>DNA PARA INOVAÇÃO</strong></p>
+                                        <p>
+                                            Habilidades essenciais que tornam o indivíduo e o coletivo aptos
+                                            para a
+                                            inovação.
+                                        </p>
+                                    </div>
+                                    <div class="flex align">
+                                        <div class="text-center mr-3 fig">
+                                            <img src="assets/imgs/grafico-coletivo.svg" class="img-fluid">
+
+                                        </div>
+                                        <div class="header-grafico">
+                                            <p class="mb-1 mt-4"><strong>PRINCIPAIS CARACTERÍSTICAS:</strong></p>
+                                            <p class="mb-1">- CRIATIVIDADE</p>
+                                            <p class="mb-1">- OTIMISMO</p>
+                                            <p class="mb-1">- CURIOSIDADE</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-xs-12 text-center">
+                                    <button class="bt-detalhes mt-2">VER EM DETALHES</button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+
+                <section class="section four">
+                    <article class="third-header">
+                        <div>
+                            <h2>FLOW DE INOVAÇÃO</h2>
+                        </div>
+                        <div class="relative">
+
+
+
+                            <div class="flex fdcol">
+                                <div class="flex jcc mb57 flow">
+                                    <div class="col-lg-3 col-md-3 col-12">
+                                        <div class="seta">
+                                            <figure>
+                                                <img src="assets/imgs/seta-dupla.svg">
+                                            </figure>
+                                        </div>
+                                        <div class="bb-top box-top-2">
+                                            <div class="header-meia-pizza-2">
+                                                <p><strong>ESTRATÉGIA <br>&amp; LIDERANÇA</strong></p>
+                                            </div>
+                                            <div class="meia-pizza">
+                                                <figure>
+                                                    <img src="assets/graficos/meia_pizza_branco/64n.svg" width="170">
+                                                </figure>
+                                            </div>
+                                        </div>
+                                        <div class="bb-bottom box-bottom-2">
+                                            <div class="score-meia-pizza">INTERMEDIÁRIO</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-12">
+                                        <div class="seta">
+                                            <figure>
+                                                <img src="assets/imgs/seta-dupla.svg">
+                                            </figure>
+                                        </div>
+                                        <div class="bb-top box-top-2">
+                                            <div class="header-meia-pizza-2">
+                                                <p><strong>INTELIGÊNCIA<br> &amp; IDEAÇÃO</strong></p>
+                                            </div>
+                                            <div class="meia-pizza">
+                                                <figure>
+                                                    <img src="assets/graficos/meia_pizza_branco/68n.svg" width="170">
+                                                </figure>
+                                            </div>
+                                        </div>
+                                        <div class="bb-bottom box-bottom-2">
+                                            <div class="score-meia-pizza">INTERMEDIÁRIO</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-12">
+                                        <div class="seta">
+                                            <figure>
+                                                <img src="assets/imgs/seta-dupla.svg">
+                                            </figure>
+                                        </div>
+                                        <div class="bb-top box-top-2">
+                                            <div class="header-meia-pizza-2">
+                                                <p><strong>DESENVOLVIMENTO<br>&amp; GESTÃO</strong></p>
+                                            </div>
+                                            <div class="meia-pizza">
+                                                <figure>
+                                                    <img src="assets/graficos/meia_pizza_branco/64n.svg" width="170">
+                                                </figure>
+                                            </div>
+                                        </div>
+                                        <div class="bb-bottom box-bottom-2">
+                                            <div class="score-meia-pizza">INTERMEDIÁRIO</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-12">
+                                        <div class="bb-top box-top-2">
+                                            <div class="header-meia-pizza-2">
+                                                <p><strong>RESULTADO <br>&amp; IMPACTO</strong></p>
+                                            </div>
+                                            <div class="meia-pizza">
+                                                <figure>
+                                                    <img src="assets/graficos/meia_pizza_branco/60n.svg" width="170">
+                                                </figure>
+                                            </div>
+                                        </div>
+                                        <div class="bb-bottom box-bottom-2">
+                                            <div class="score-meia-pizza">INTERMEDIÁRIO</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex jcc">
+                            <button class="bt-detalhes ml19">VER EM DETALHES</button>
+                        </div>
+                    </article>
+                </section>
+
+
+                <section class="section five">
+                    <article>
+                        <div class="three-col">
+                            <div class="box-low">
+                                <p class="header-text-section-five">RECOMENDAÇÕES</p>
+                                <button class="bt-detalhes-branco">VER TODAS EM DETALHES</button>
+                            </div>
+                            <div class="text-section-five bord">
+                                <span>PESSOAS</span>
+                                <p>Estruturar e sistematizar a aprendizagem organizacional como vínculo entre o
+                                    indivíduo e
+                                    o coletivo, para genuinamente
+                                    pensar inovação como um time e não como uma área específica responsável pela
+                                    inovação.
+                                </p>
+                            </div>
+                            <div class="text-section-five">
+                                <span>FLOW DE INOVAÇÃO</span>
+                                <p>Desenvolver um grid central de inovação que traga clareza de objetivos
+                                    (mercadológicos e
+                                    financeiros – CPIs &amp; KPIs) e entregáveis para todas as áreas da organização.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+
+                <section class="section six">
+                    <div class="fl-left duvidas bg-gray-1 border-radius-20 box-bottom-1 h410 mb25">
+                        <article>
+                            <div class="box-center">
+                                <div class="mb-3 mt-4">
+                                    <figure class="innopedia"></figure>
+                                </div>
+                                <div class="flex aic fdcol plat40 mb-4">
+                                    <p class="mb-3">
+                                        <strong>Ficou em dúvida?</strong>
+                                    </p>
+                                    <p class="mb-4">
+                                        Aqui você vai encontrar conceitos
+                                        e informações que facilitarão a
+                                        compreensão da cultura de inovação
+                                        da sua empresa.
+                                    </p>
+                                    <button class="bt-detalhes">VER EM DETALHES</button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="fl-right vetor bg-gray-2 border-radius-20 box-bottom-1 h410">
+                        <article class="third-header text-flex">
+                            <div>
+                                <h2>VETORES PARA INOVAÇÃO</h2>
+                            </div>
+                            <div class="fcw row">
+                                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                                    <p>- Estratégia &amp; Liderança</p>
+                                    <p>- Inteligência &amp; Ideação</p>
+                                    <p>- Amplitude da Inovação​</p>
+                                    <p>- Governança &amp; Funil</p>
+                                    <p>- Modelos de Negócio​</p>
+                                </div>
+                                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                                    <p>- Transformação Digital​</p>
+                                    <p>- Data-Driven​</p>
+                                    <p>- Prontidão para Agile</p>
+                                    <p>- Inovação Aberta</p>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-3 mb-3">
+                                <button class="bt-detalhes-green  btn-details">VER EM DETALHES</button>
+                            </div>
+                        </article>
+                    </div>
+
+                </section>
+
+                <section class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                            <article class="bg-gray-3 border-radius-20">
+    
+                                <div class="box-1 fdcol jcfend h64">
+                                    <div class="center">
+                                        <img src="assets/imgs/data-own.svg" class="img-fluid">
+                                    </div>
+                                    <div>
+                                        <p class="fs25 fcb mt-3 mb-0"><strong>ANÁLISE BENCHMARK</strong></p>
+                                        <button class="bt-detalhes mt20">EM BREVE</button>
+                                    </div>
+    
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                            <article class="bg-gray-3 border-radius-20 bg-gray-3">
+    
+                                <div class="box-1 fdcol jcfend h64">
+                                    <div class="center">
+                                        <img src="assets/imgs/increasing-own.svg" class="img-fluid">
+                                    </div>
+                                    <div>
+                                        <p class="fs25 fcb"><strong>CONFIABILIDADE<br>&amp; METODOLOGIA</strong></p>
+                                        <button class="bt-detalhes">VER EM DETALHES</button>
+                                    </div>
+    
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+        
+
+                </section>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="assets/js/jquery-3.3.1.min.js">
+    </script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous">
+    </script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous">
+    </script>
+    <script src="assets/js/utils.js" type="text/javascript"></script>
+</body>
+
+</html>
