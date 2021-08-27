@@ -8303,6 +8303,9 @@ a.article {
     font-size: 22px;
     padding: 10px 0; } }
 @media only screen and (max-width: 768px) {
+  header.small {
+    position: relative; }
+
   .section {
     display: flex;
     text-align: center;
