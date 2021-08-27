@@ -1,6 +1,11 @@
 $(document).on("scroll", function () {
 	if ($(document).scrollTop() > 100) {
-		$("header").addClass("small");
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+            $("header").addClass("");
+           } else {
+            $("header").addClass("small");
+           }
+	
         $('.home').addClass("mghome");
 	
 	} else {
