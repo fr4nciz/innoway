@@ -1,0 +1,222 @@
+
+.boxb {
+    .container-intro{
+        display: flex;
+        align-items: baseline;
+    }
+    .btn-end{
+        display: flex;
+        margin-top: 20px;
+        justify-content: flex-end;
+    }
+    .title-reco{
+        color: var(--pessoas-font-color);
+        font-size: 35px;
+        font-weight: 700;
+    }
+    .intra-title{
+        color: var(--pessoas-font-color);
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+    .grafico-65{
+        content: var(--grafico-65);
+        width: 250px;
+    }
+    .center-back{
+        display: flex;
+        justify-content: center;
+    }
+    .one{
+        background-color: rgba(51,51,51,1);
+        color: white;
+        min-width: 20px;
+        padding: 30px;
+    }
+    .container-text{
+        gap: 100px;
+    }
+    .title-text-section-one{
+        font-weight: bold;
+        color: var(--pessoas-font-color);
+    }
+    .title-grafics{
+        font-weight: bold;
+        font-size: 1rem;
+        text-align: center;
+    }
+    .title-black{
+        color: rgba(67,67,67,1);
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    
+    .barra{
+        border-left: 1px solid;
+        height: 100px;
+        margin-top: -40px;
+    }
+    .background-grafics p{
+        display: flex;
+        margin-left: 63px;
+    }
+    
+    .min-container{
+        max-width: 94%;
+        margin-left: 3%;
+    }
+    .container-text{
+        display: flex;
+        align-items: flex-end;
+        margin-top: 0;
+    }
+    .container-one{
+        align-items: center;
+        text-align: center;
+     }
+    .title-green{ 
+        color: var(--pessoas-font-color);
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .container-center{
+        background-color: #333333;
+        max-width: 300px;
+        font-size: 16px;
+        font-weight: bold;
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+        position: relative;
+        top: 28px;
+        letter-spacing: 6px;
+    }
+    .box{
+        display: flex;
+        border: 3px solid var(--pessoas-font-color);
+        padding: 40px 20px 40px 20px;
+        border-radius: 20px;    
+        align-items: center;
+
+        p{
+            min-height: 200px;
+            &.mh-300 {
+                min-height: 300px;
+            }
+
+            &.mh-250 {
+                min-height: 250px;
+            }
+        }
+    }
+    .sections{
+        display: flex;
+        flex-direction: column;
+        padding-left: 50px;
+        margin-left: -60px;
+        font-size: 12px;  
+    }
+    .barra{
+        border-left: 1px solid var(--gray-txt);
+        height: 100%;
+    }
+    .container-progress{
+        justify-content: space-around;
+        text-align: center;
+        padding-top: 25px;
+        color: white;
+        font-weight: bold;
+    }
+    .progress-one{
+        display: flex;
+        flex-direction: column;
+        font-size: 1rem;
+        margin-top: -40px;
+    }
+    .chart1 {
+        height: 1rem;
+        width: 100%;
+        background-color: white;
+        border:none;
+    }
+    .barra{
+        border-left: 1px solid #434343;
+        height: 240px;
+        margin-top: 0;
+    }
+    
+    .externo1 {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        font-weight: bold;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        margin-top: 15px;
+        .progress {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            .progress-bar {
+                height: 100%;
+            }
+           
+        }
+        .percent {
+            display: flex;
+            flex-direction: column;
+            width: 100%
+        }
+    }
+    .chart1 div {
+        height: 100%;
+        float: left;
+    }
+    .chart1 .green {
+        background-color: green;
+    }
+    .yellow{
+        background-color: yellow;
+    }
+    .title-center{
+        background-color: whitesmoke;
+    }
+    
+    @media screen and (max-width: 1200px){
+        .container-intro{
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+        }
+        .one article{
+            display: flex;
+            flex-direction: column;
+        }
+        .container-text{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+        }
+        .bt-detalhes{
+            display: none;
+        }
+   
+        .sections{
+            gap: 40px;
+        }
+        .barra{
+            display: none;
+        }
+        .container-text{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        .container-intro{
+            align-items: center;
+        }
+    }
+
+}

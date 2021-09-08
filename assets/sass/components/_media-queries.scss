@@ -6,6 +6,39 @@
 }
 
 @media only screen and (max-width: 1200px) {
+
+    .search {
+        
+        padding-top: 0;
+        margin: 6px 0 !important;
+        max-width: 200px;
+        float: right;
+    }
+    .bord {
+        border: none;
+    }
+
+    .progress-grid .prg.actv .val {
+        display: block;
+        position: absolute;
+        top: -65px;
+        left: 34%;
+        font-size: 3rem;
+        font-weight: 800;
+    }
+
+    .infinit .t-inf-1 span {
+        right: -90px;
+        font-size: 1.5rem;
+        top: 20px;
+    }
+
+    .infinit .t-inf-2 span {
+        left: -90px;
+        font-size: 1.5rem;
+        top: 20px;
+    }
+
     .three-col .box-low {
         width: 100%;
         text-align: center;
@@ -140,6 +173,7 @@
         font-size: 12px;
         padding-left: 0;
     }
+
     .box-bottom-1 {
         // min-height: 380px;
     }
@@ -148,9 +182,11 @@
         font-size: 22px;
         padding: 15px 0;
     }
+
     .box-1 {
         padding: 30px 10px;
-            p {
+
+        p {
             font-size: 16px !important;
         }
     }
@@ -163,19 +199,69 @@
 }
 
 @media only screen and (max-width: 990px) {
+
+    .boxb .box{
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 20px 0;
+        align-content: center;
+        align-items: center;
+        .cols {
+            min-height: 260px;
+        }
+
+        p {
+            min-height: 160px;
+            text-align: left;
+        }
+    }
+
+    section.box-black .section-text {      
+        flex-direction: column;
+        padding: 15px 2% 0 2%;
+    }
+    #sidebarCollapse {
+        position: fixed;
+        top: 5px;
+    }
+
+    #sidebarCollapse {
+        background: #e5e5e5;
+        cursor: pointer;
+        border: 1px solid #ccc;
+    }
+
+    .header-content {
+        margin-top: 40px;
+    }
+
+    .progress-grid .prg p {
+        font-size: 10px;
+    }
+
+    .progress-grid .prg .c_bar {
+        font-size: 8px;
+    }
+
     .fechar-menu {
         display: block;
     }
+
     .sidebar_r {
-        position: absolute;
+        position: fixed;
         left: 0;
         z-index: 999;
 
     }
 
+    .sidebar_r ul.list-unstyled.components {
+        padding: 10px 0;
+    }
+
     .sidebar_r .sidebar-header {
         padding: 30px 20px;
-     }
+    }
 
     #sidebar.active {
         position: absolute;
@@ -196,19 +282,156 @@
         font-size: 22px;
         padding: 10px 0;
     }
+
+    #sidebar.active {
+        position: fixed;
+        z-index: 1200;
+        height: 100%;
+        overflow: auto;
+    }
+    .box-black-one {
+        margin:0 ;
+    }
 }
 
 @media only screen and (max-width: 768px) {
+
+    .box-black-one {
+        margin:20px 0 0 0;
+    }
+    .boxb .box {
+        padding: 40px 20px 40px 20px;
+    
+    }
+
+    .boxb .container-center {
+        letter-spacing: 2px;
+        max-width: 220px;
+        top: 34px;
+    }
+
+    .boxb .box .cols {
+        padding-bottom: 50px;
+        min-height: auto;
+    }
+    section.box-black .container-text {   
+        flex-direction: column;
+        p{
+            padding: 0 15px;
+        }
+    }
+
+    section.box-black .background-grafics {    
+        width: 100%;      
+    }
+
+    section.box-black .section-text {
+        width: 100%;
+    }
+    .barras .percent {
+     
+        font-size: 1rem;
+    }
+
+    .barras .lb-prog {
+        width: 42%;
+        font-size: 9px;
+        text-align: left;
+        line-height: 14px;
+    }
+    .barras .progress {  
+        width: 40%;
+    }
+
+    .barras .percent {
+        width: 20%;
+    }
+
+    .arce {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .progress-grid .bdr {
+        border: none;
+    }
+
+    .titulo h2 {
+        font-size: 1.2rem;
+        font-weight: 700;
+        padding: 10px 0;
+    }
+
+    .main-header {
+        display: flex;
+        align-items: center;
+        height: auto;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .header-content {
+        margin-top: 10px;
+    }
+
+    #sidebarCollapse {
+        background: #e5e5e5;
+        cursor: pointer;
+        border: 0;
+        position: relative;
+        top: 0;
+    }
+
+
+    .progress-grid {
+        margin-top: 50px;
+    }
+
+    .p-cst {
+        padding: 20px 15px 0 15px;
+    }
+
+
+    .progress-grid .prg.actv .val {
+        top: -38px;
+        left: 38%;
+        font-size: 1.5rem;
+    }
+
+    .infinit {
+        margin: 0 20px;
+    }
+
+    .infinit h5 {
+        font-size: 1rem;
+    }
+
+    .infinit .t-inf-1 span {
+        right: -55px;
+        font-size: 1rem;
+        top: 28px;
+    }
+
+    .infinit .t-inf-2 span {
+        left: -55px;
+        font-size: 1rem;
+        top: 28px;
+    }
+
     .mghome {
         margin-top: 3rem !important;
     }
-    
+
 
     header.small {
         position: relative;
     }
 
-    .section{
+    .section {
         display: flex;
         text-align: center;
         flex-direction: column;
@@ -218,7 +441,7 @@
     .third-header h2 {
         font-size: 20px;
     }
- 
+
     .three-col>div {
         width: 100%;
     }
@@ -357,28 +580,105 @@
         margin: 5%;
     }
 
+    .progress-grid {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .progress-grid .prg .c_bar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    .progress-grid .prg p {
+        font-size: 10px;
+        width: 100%;
+    }
+
+    .progress-grid .prg {
+        display: flex;
+        width: 100%;
+        align-content: center;
+        flex-direction: row;
+        text-align: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .progress-grid .prg .c_bar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    .progress-grid .prg .flue,
+    .progress-grid .prg .basic {
+        border-radius: 0;
+    }
+
+    .progress-grid .prg.actv .val {
+        left: 44%;
+    }
+    .background-grafics {
+             flex-direction: column;
+    }
+    section.sec-peaple .container-text, .grafics{
+        width: 100%;
+    }
+
+    .head-section .titulo {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+
+    .head-section .subtitulo {
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+
 }
 
 @media only screen and (max-width: 500px) {
-    .fechar-h, .bt-data {
+    .logout {
+        display: none;
+    }
+
+    .fechar-h,
+    .bt-data {
         display: block;
     }
+
+    // header {
+    //     position: fixed;
+    // }
     .header-content {
         display: flex;
         justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
         position: fixed;
-        max-width: 200px;
+        max-width: calc(100% - 50px);
         z-index: 998;
         background: var(--black-200);
-        left: -205px;
+        left: -100%;
         transition: 0.5s all ease-in-out;
         top: 70px;
+
         &.act {
             left: 26px;
             transition: 0.5s all ease-in-out;
-         
+
         }
 
         .box-header {
@@ -387,8 +687,8 @@
             align-items: center;
             flex-wrap: nowrap;
             margin: 5px 0;
-            width: 100%;
-         
+            width: 48%;
+
         }
 
         img {
@@ -403,10 +703,167 @@
         padding: 10px;
         border-radius: 15px;
     }
+
+
+
+
 }
 
+@media only screen and (max-width: 500px) {
+
+    .barras .lb-prog {
+        width: 30%;
+        font-size: 10px;
+    }
+
+    .barras .progress {
+        width: 50%;
+    }
+
+    .outer.brs {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .grupo-barras, .img-gr {
+        width: 100%;
+    }
+
+    .card .title {
+        font-size: 11px;
+        top: 20px;
+        text-align: left;
+        display: block;
+    }
+
+    .img-gr {
+        width: 100%;
+    }
+
+
+    .card .card-body p {
+        font-size: 11px;
+          text-align: left;
+    }
+    .score-header {
+        font-size: 20px;
+    }
+        
+    .innovation-header {
+        font-size: 9px;
+       
+    }
+
+    .arce {
+        width: 50%;
+    }
+
+    .logout {
+        display: none;
+    }
+
+    .fechar-h { 
+        right: 4px;
+        top: -18px;    
+        font-size: 3.2rem;
+      
+    }
+
+    .logout-mob {
+        display: flex;
+        img {
+            max-width: 25px !important;
+            position: relative;
+            top: -26px;
+            right: -10px
+        }
+    }
+
+    .infinit {
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+        align-content: center;
+    }
+
+    .infinit .t-inf-1 h5 {
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .infinit .t-inf-2 h5 {
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .infinit .t-inf-1 span,
+    .infinit .t-inf-2 span {
+        position: relative;
+        right: 0;
+        font-size: 2rem;
+        font-weight: 800;
+        top: 0;
+        left: 0;
+    }
+
+    .infinit .t-inf-1,
+    .infinit .t-inf-2 {
+        justify-content: flex-end;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
+
+    }
+
+    .infinit .inf {
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .small .header-content img {
+        max-width: 70px;
+        margin: 10px 0 9px 0;
+    }
+
+    header {
+   
+        padding: 10px;
+        border-radius: 0;
+        position: fixed;
+        left: 0;
+        top: 0;
+    }
+    body {
+        padding-top: 60px;
+    }
+
+    .titulo h2 span {
+        font-size:14px;
+    }
+
+    .boxb .box p.mh-300, .boxb .box p.mh-250 {
+         min-height: auto;
+    }
+}
 
 @media only screen and (max-width: 400px) {
+
+    .barras .lb-prog {
+        width: 35%;
+        font-size: 11px;
+    }
+
+    .barras .progress {
+        width: 45%;
+    }
+
     .pontuacao-content {
         display: flex;
         padding-top: 15px;

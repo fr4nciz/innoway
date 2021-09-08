@@ -1,6 +1,8 @@
 strong {
     font-weight: bold;
 }
-p { 
-   color: #000; 
-}
+p{
+    color: var(--black-800);
+    font-size: 14px;
+ }
+ 

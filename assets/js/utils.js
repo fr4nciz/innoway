@@ -1,16 +1,20 @@
 $(document).on("scroll", function () {
 	if ($(document).scrollTop() > 100) {
-        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        
+        if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {             
             $("header").addClass("");
            } else {
+       
             $("header").addClass("small");
            }
 	
         $('.home').addClass("mghome");
+        $('.sec-home').addClass("mghome");
 	
 	} else {
 		$("header").removeClass("small");
         $('.home').removeClass("mghome");
+        $('.sec-home').removeClass("mghome");
 	}
 });
 

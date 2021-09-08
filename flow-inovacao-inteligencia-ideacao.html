@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Innoway</title>
+
+    <!-- Our Custom CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,500,800" el='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Font Awesome JS -->
+
+
+</head>
+
+<body class="own-report">
+
+    <div class="container">
+
+        <div class="wrapper">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar" class="sidebar_r">
+                <button class="fechar-menu">×</button>
+                <div class="sidebar-header mt-4 mb-2">
+                    <img class="logo img-fluid" src="assets/imgs/logo.png">
+                </div>
+
+
+
+                <ul class="list-unstyled components">
+
+                    <li>
+                        <a href="#">RESULTADO</a>
+                    </li>
+
+                    <li>
+                        <a href="#">RECOMENDAÇÕES</a>
+                    </li>
+
+
+                    <li>
+                        <a href="#sub1" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">PESSOAS</a>
+                        <ul class="show collapse list-unstyled" id="sub1">
+                            <li>
+                                <a href="#">• Intraempreendedorismo</a>
+                            </li>
+                            <li>
+                                <a href="#">• Adaptabilidade</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">DNA PARA INOVAÇÃO</a>
+                    </li>
+
+
+
+                    <li>
+                        <a href="#sub2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">FLOW DE
+                            INOVAÇÃO</a>
+                        <ul class="show collapse list-unstyled" id="sub2">
+                            <li>
+                                <a href="#">• Estratégia & Liderança</a>
+                            </li>
+                            <li>
+                                <a href="#">• Inteligência & Ideação</a>
+                            </li>
+
+                            <li>
+                                <a href="#">• Desenvolvimento & Gestão</a>
+                            </li>
+
+                            <li>
+                                <a href="#">• Resultado & Impacto</a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#">VETORES DE INOVAÇÃO</a>
+                    </li>
+
+
+                    <li>
+                        <a href="#sub3" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">ANÁLISE
+                            BENCHMARK</a>
+                        <ul class="show collapse list-unstyled" id="sub3">
+                            <li>
+                                <a href="#">• Innoway <span>(em breve)</span></a>
+                            </li>
+                            <li>
+                                <a href="#">• Setorial <span>(em breve)</span></a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="active">
+                        <a href="#">INNOPEDIA</a>
+                    </li>
+
+                    <li>
+                        <a href="#">DEMOGRÁFICOS</a>
+                    </li>
+
+                    <li>
+                        <a href="#">CONFIABILIDADE &
+                            METODOLOGIA</a>
+                    </li>
+
+
+
+
+
+
+                    <li>
+                        <a href="#sub4" data-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle">DOWNLOADS</a>
+                        <ul class="show collapse list-unstyled" id="sub4">
+                            <li>
+                                <a href="#">Apresentação Resultados</a>
+                            </li>
+                            <li>
+                                <a href="#">DATABASE <span>(perguntas abertas)</span> </a>
+                            </li>
+                            <li>
+                                <a href="#">selo ACATE Innoway</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+            <!-- Page content  -->
+            <div id="content">
+
+                <header>
+
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
+                    <div class="search d-xl-none m-3">
+                        <input class="field-search pl-1" type="text" placeholder="Pesquisar Innopedia">
+                        <button class="lupa"></button>
+                    </div>
+
+                    <button class="bt-data">
+                        Dados >
+                    </button>
+
+                    <div class="header-content">
+                        <button class="fechar-h">×</button>
+
+
+
+                        <div class="arce">
+                            <img src="assets/imgs/arcelormittal.png">
+                        </div>
+
+                        <div class="logout-mob">
+                            <img onclick="javascript:changeOwner();" src="assets/imgs/logout.svg" alt="">
+                        </div>
+
+                        <div class="box-header">
+                            <div class="innovation-header">
+                                <span>Innovation Power</span>
+                                <p>avançado</p>
+                            </div>
+                            <div class="score-header">
+                                <span>75</span>
+                                <p>score</p>
+                            </div>
+                        </div>
+                        <div class="box-header">
+                            <div class="peaple-header">
+                                <span>pessoas</span><span>77%</span>
+                            </div>
+                            <div class="flow-header">
+                                <span>flow de inovação</span><span>64%</span>
+                            </div>
+                        </div>
+                        <div class="logout">
+                            <img onclick="javascript:changeOwner();" src="assets/imgs/logout.svg" alt="">
+                        </div>
+                    </div>
+                </header>
+
+                <div class="search d-none d-xl-block text-right">
+                    <input class="field-search" type="text" placeholder="Pesquisar Innopedia">
+                    <button class="lupa"></button>
+                </div>
+                <section class="sec-home green-tit">
+                    <div class="titulo text-left mt-5">
+                        <h2 class=" p-0 pb-3">FLOW DE INOVAÇÃO <span>/  inteligência & ideação</span> <a class="voltar float-right" href=""><span>‹</span>
+                                Voltar</a></h2>
+                    </div>
+
+                </section>
+
+                <section class="box-black">
+                    <article>
+                        <div class="container-text">
+                            <div class="background-grafics">
+                                <img src="assets/graficos/meia_pizza/76m.svg">
+                                <p class="title-grafics">INTELIGÊNCIA <br />
+                                    & IDEAÇÃO</p>
+                            </div>
+                            <div class="section-text">
+                                <p class="subt">CONCEITO</p>
+                                <p>
+                                    <strong>Compreende a habilidade da empresa de entender 
+                                        e mensurar, tanto internamente como 
+                                        externamente,  suas iniciativas de melhoria de 
+                                        processos, novos produtos e novos serviços.</strong> Além 
+                                        de revelar a capacidade de mapeamento dos 
+                                        mercados em que atuam, englobando tendências, 
+                                        entendimento do cliente e a performance da 
+                                        concorrência. Indica o grau de estruturação, acesso e 
+                                        utilização de dados, como ativos intangíveis de alto 
+                                        valor para a geração de vantagem competitiva, por 
+                                        meio de novas ideias, pesquisa e desenvolvimento​
+                                    ​</p>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+
+                <section class="min-container boxb">
+                    <article class="box-black-one">
+                        <div class="container-text ">
+                            <div class="container-one">
+                                <p class="title-green">INTELIGÊNCIA & IDEAÇÃO
+                                </p>
+                                <p>
+                                    Compreende a habilidade da empresa de entender e mensurar, tanto internamente 
+                                    como externamente, suas iniciativas de melhoria de processos, novos produtos e novos 
+                                    serviços. Indica a geração de vantagem competitiva, por meio de​
+                                    novas ideias, pesquisa e desenvolvimento.​​
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="container-center">
+                            <p>INSIGHTS</p>
+                        </div>
+                        <div class="box">
+                            <div class="cols col-lg-3 col-md-6 col-sm-12 col-12">
+                                <p class="mh-300">
+                                    <strong>
+                                        INTELIGÊNCIA 
+                                        ENDÓGENA
+                                        
+                                    </strong><br />
+                                    Mensuração de 
+                                    indicadores de 
+                                    performance internos 
+                                    para as inovações, 
+                                    incluindo objetivos 
+                                    financeiros. Clareza do 
+                                    impacto de novos 
+                                    produtos e serviços nos 
+                                    resultados da empresa.
+                                </p>
+                                <div class="container-progress">
+                                    <div class="progress-one">
+                                        <div class="externo1">
+                                            <div class="percent">73%</div>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-success progress-bar-striped progress-bar-animated"
+                                                    style="width:73%"></div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <span class="barra"></span>
+                            <div class="cols col-lg-3 col-md-6 col-sm-12 col-12">
+                                <p class="mh-300">
+                                    <strong>
+                                        INTELIGÊNCIA EXÓGENA
+
+                                    </strong>
+                                    <br />
+                                    Entendimento de 
+                                    tendências e  mensuração 
+                                    de fatores que indicam a  
+                                    real satisfação dos clientes. 
+                                    Monitoramento constante 
+                                    do mercado e da 
+                                    concorrência.  Utilização de 
+                                    ferramentas como Design 
+                                    Thinking, Trend Hunting, 
+                                    etc.
+                                </p>
+                                <div class="container-progress">
+                                    <div class="progress-one">                             
+                                        <div class="externo1">
+                                            <div class="percent">74%</div>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-success progress-bar-striped progress-bar-animated"
+                                                    style="width:74%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="barra"></span>
+                            <div class="cols col-lg-3 col-md-6 col-sm-12 col-12">
+                                <p class="mh-300">
+                                    <strong>
+                                        TEST & LEARN
+
+                                    </strong><br />
+                                    Aponta a maturidade 
+                                    da ideologia de 
+                                    aprendizagem da 
+                                    empresa. Reconhece e 
+                                    valoriza a agilidade e a​
+                                    capacidade de 
+                                    aprendizado por meio 
+                                    de protótipos.​ 
+                                </p class="mh-300">
+                                <div class="container-progress">
+                                    <div class="progress-one">
+                                             <div class="externo1">
+                                            <div class="percent">73%</div>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-success progress-bar-striped progress-bar-animated"
+                                                    style="width:73%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <span class="barra"></span>
+
+                            <div class="cols col-lg-3 col-md-6 col-sm-12 col-12">
+                                <p class="mh-300">
+                                    <strong>
+                                        P&D
+
+                                    </strong><br />
+                                    Demonstra a maturidade 
+                                    estratégica, a robustez de 
+                                    talentos e recursos para a 
+                                    geração de pesquisa e​
+                                    desenvolvimento, por 
+                                    meio de Insights 
+                                    relevantes provenientes 
+                                    de dados internos e 
+                                    externos.
+                                </p>
+                                <div class="container-progress">
+                                    <div class="progress-one">
+                                                                  
+                                        <div class="externo1">
+                                            <div class="percent">75%</div>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-success progress-bar-striped progress-bar-animated"
+                                                    style="width:75%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+
+
+                <section class="min-container boxb">
+                    <article class="box-black-one">
+                        <div class="container-text ">
+                            <div class="container-one">
+                                <p class="title-green">DATA-DRIVEN                              </p>
+                                <p>
+                                    A transformação digital é o meio para que as empresas atinjam uma fase mais 
+elevada de desenvolvimento,  tornando-se Data-Driven: os dados são ativos 
+intangíveis essências e de alto valor para o negócio.​
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="container-center">
+                            <p>CULTURA DE DADOS​</p>
+                        </div>
+                        <div class="box">
+                            <div class="cols col-lg-3 col-md-6 col-sm-12 col-12">
+                                <p>
+                                    <strong>
+                                        EMPÍRICA
+
+                                        
+                                    </strong><br />
+                                    A coleta e o uso de dados 
+                                    são limitados. As decisões 
+                                    são tomadas com base 
+                                    em experiência, 
+                                    observação e intuição. 
+                                </p>
+                                <div class="container-progress">
+                                    <div class="progress-one">
+                                        <div class="externo1">
+                                            <div class="percent">77%</div>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-success progress-bar-striped progress-bar-animated"
+                                                    style="width:77%"></div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <span class="barra"></span>
+                            <div class="cols col-lg-3 col-md-6 col-sm-12 col-12">
+                                <p>
+                                    <strong>
+                                        GUIADA
+
+                                    </strong>
+                                    <br />
+                                    Construindo frequência e 
+                                    eficiência no uso de 
+                                    dados. Metodologias e 
+                                    ferramentas de dados  
+                                    são utilizadas para gerar 
+                                    novas ideias e valor para 
+                                    colaboradores e clientes. 
+                                </p>
+                                <div class="container-progress">
+                                    <div class="progress-one">                             
+                                        <div class="externo1">
+                                            <div class="percent">88%</div>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-info progress-bar-striped progress-bar-animated"
+                                                    style="width:88%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="barra"></span>
+                            <div class="cols col-lg-3 col-md-6 col-sm-12 col-12">
+                                <p>
+                                    <strong>
+                                        ESTRATÉGICA
+                                        
+                                    </strong><br />
+                                    Competências de análise 
+                                    de dados estabelecidas e 
+                                    sendo usada de forma 
+                                    estratégica. Incluindo 
+                                    análises preditivas e 
+                                    prescritivas para tomada 
+                                    de decisões.
+                                </p>
+                                <div class="container-progress">
+                                    <div class="progress-one">
+                                             <div class="externo1">
+                                            <div class="percent">75%</div>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-success progress-bar-striped progress-bar-animated"
+                                                    style="width:75%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <span class="barra"></span>
+
+                            <div class="cols col-lg-3 col-md-6 col-sm-12 col-12">
+                                <p>
+                                    <strong>
+                                        AMPLIFICADA
+                                        
+                                    </strong><br />
+                                    Existe uma inteligência 
+                                    coletiva integrada e 
+                                    estruturada, que usa 
+                                    dados em tempo  real e 
+                                    inteligência artificial para 
+                                    gerar novas 
+                                    oportunidades. 
+                                </p>
+                                <div class="container-progress">
+                                    <div class="progress-one">
+                                                                  
+                                        <div class="externo1">
+                                            <div class="percent">66%</div>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated"
+                                                    style="width:66%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+
+
+
+
+
+                <div class="row">
+                    <div class="col-lg-12 text-center mt-4">
+                        <a class="voltar-b" href=""><span>‹</span> Voltar</a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="assets/js/jquery-3.3.1.min.js">
+    </script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous">
+    </script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous">
+    </script>
+    <script src="assets/js/utils.js" type="text/javascript"></script>
+</body>
+
+</html>

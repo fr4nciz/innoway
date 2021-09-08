@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Innoway</title>
+
+    <!-- Our Custom CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,500,800" el='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Font Awesome JS -->
+
+
+</head>
+
+<body class="own-report">
+
+    <div class="container">
+
+        <div class="wrapper">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar" class="sidebar_r">
+                <button class="fechar-menu">×</button>
+                <div class="sidebar-header mt-4 mb-2">
+                    <img class="logo img-fluid" src="assets/imgs/logo.png">
+                </div>
+
+            
+
+                <ul class="list-unstyled components">
+
+                    <li>
+                        <a href="#">RESULTADO</a>
+                    </li>
+
+                    <li>
+                        <a href="#">RECOMENDAÇÕES</a>
+                    </li>
+
+
+                    <li>
+                        <a href="#sub1" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">PESSOAS</a>
+                        <ul class="show collapse list-unstyled" id="sub1">
+                            <li>
+                                <a href="#">• Intraempreendedorismo</a>
+                            </li>
+                            <li>
+                                <a href="#">• Adaptabilidade</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">DNA PARA INOVAÇÃO</a>
+                    </li>
+
+
+
+                    <li>
+                        <a href="#sub2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">FLOW DE
+                            INOVAÇÃO</a>
+                        <ul class="show collapse list-unstyled" id="sub2">
+                            <li>
+                                <a href="#">• Estratégia & Liderança</a>
+                            </li>
+                            <li>
+                                <a href="#">• Inteligência & Ideação</a>
+                            </li>
+
+                            <li>
+                                <a href="#">• Desenvolvimento & Gestão</a>
+                            </li>
+
+                            <li>
+                                <a href="#">• Resultado & Impacto</a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#">VETORES DE INOVAÇÃO</a>
+                    </li>
+
+
+                    <li>
+                        <a href="#sub3" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">ANÁLISE
+                            BENCHMARK</a>
+                        <ul class="show collapse list-unstyled" id="sub3">
+                            <li>
+                                <a href="#">• Innoway <span>(em breve)</span></a>
+                            </li>
+                            <li>
+                                <a href="#">• Setorial <span>(em breve)</span></a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="active">
+                        <a href="#">INNOPEDIA</a>
+                    </li>
+
+                    <li>
+                        <a href="#">DEMOGRÁFICOS</a>
+                    </li>
+
+                    <li>
+                        <a href="#">CONFIABILIDADE &
+                            METODOLOGIA</a>
+                    </li>
+
+
+
+
+
+
+                    <li>
+                        <a href="#sub4" data-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle">DOWNLOADS</a>
+                        <ul class="show collapse list-unstyled" id="sub4">
+                            <li>
+                                <a href="#">Apresentação Resultados</a>
+                            </li>
+                            <li>
+                                <a href="#">DATABASE <span>(perguntas abertas)</span> </a>
+                            </li>
+                            <li>
+                                <a href="#">selo ACATE Innoway</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+            <!-- Page content  -->
+            <div id="content">
+
+                <header>
+
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
+                    <div class="search d-xl-none m-3">
+                        <input class="field-search pl-1" type="text" placeholder="Pesquisar Innopedia">
+                        <button class="lupa"></button>
+                    </div>
+
+                    <button class="bt-data">
+                        Dados >
+                    </button>
+
+                    <div class="header-content">
+                        <button class="fechar-h">×</button>
+
+                   
+
+                        <div class="arce">
+                            <img src="assets/imgs/arcelormittal.png">
+                        </div>
+
+                        <div class="logout-mob">
+                            <img onclick="javascript:changeOwner();" src="assets/imgs/logout.svg" alt="">
+                        </div>
+
+                        <div class="box-header">
+                            <div class="innovation-header">
+                                <span>Innovation Power</span>
+                                <p>avançado</p>
+                            </div>
+                            <div class="score-header">
+                                <span>75</span>
+                                <p>score</p>
+                            </div>
+                        </div>
+                        <div class="box-header">
+                            <div class="peaple-header">
+                                <span>pessoas</span><span>77%</span>
+                            </div>
+                            <div class="flow-header">
+                                <span>flow de inovação</span><span>64%</span>
+                            </div>
+                        </div>
+                        <div class="logout">
+                            <img onclick="javascript:changeOwner();" src="assets/imgs/logout.svg" alt="">
+                        </div>
+                    </div>
+                </header>
+
+                <div class="search d-none d-xl-block text-right">
+                    <input class="field-search" type="text" placeholder="Pesquisar Innopedia">
+                    <button class="lupa"></button>
+                </div>
+                <section class="sec-home green-tit">
+                    <div class="titulo text-left mt-5">
+                        <h2 class=" p-0 pb-3">FLOW DE INOVAÇão <a class="voltar float-right" href=""><span>‹</span> Voltar</a></h2>
+                    </div>
+    
+                </section>
+             
+                <section class="section sec-peaple one">
+                    <article>
+                        <div class="background-grafics">
+                            <div class="grafics">
+                                <img src="assets/graficos/pizza/79.svg" alt="Grafico 77%">
+                            </div>
+                            <div class="container-text pt-0 mt-3">
+                                <div>
+                                    <p class="title-text-section"><strong>APRENDIZADO</strong></p>
+                                    <p>
+                                        <strong>A ArcelorMittal é uma empresa ambidestra. Com 
+                                            excelência em disciplina, gerenciamento, processos e 
+                                            entregas. Sem deixar de ter uma capacidade robusta 
+                                            de exploração e geração de novas ideias. 
+                                            </strong>. <br />
+                                            As oportunidades de evolução identificadas no Flow de Inovação 
+                                            são pontuais. Trata-se de ajustes finos. Sendo a maior delas a 
+                                            evolução da estratégia para a geração de inovações disruptivas, 
+                                            seguida pela estruturação de Analytics para inteligência artificial 
+                                            e finalizando com o treinamento do time em técnicas de 
+                                            inteligência para inovação.
+                                </p>
+                                </div>
+                            </div>
+                    </div></article>
+                </section>
+
+
+                <section class="section">
+                    <article>
+                        <div class="head-section">
+                            <p class="titulo"><strong>ESTRATÉGIA & LIDERANÇA
+                            </strong></p>
+                            <p class="subtitulo">AVANÇADO</p>
+                        </div>
+
+                        <div class="outer brs">
+                            <div class="img-gr">
+                                <img src="assets/graficos/meia_pizza_branco/77n.svg">
+                            </div>
+
+                            <!-- classes
+                                bg-success = verde
+                                bg-info = azul
+                            -->
+
+                            <div class="grupo-barras">
+                                <div class="barras">
+                                    <div class="lb-prog">ESTRATÉGIA <br />
+                                        CORPORATIVA </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width:85%"></div>
+                                      </div>
+                                    <div class="percent">85%</div>                              
+                                </div>
+
+                                <div class="barras">
+                                    <div class="lb-prog">ESTRATÉGIAS DE <br />
+                                        INOVAÇÃO</div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width:82%"></div>
+                                      </div>
+                                    <div class="percent">82%</div>                              
+                                </div>
+
+                                <div class="barras">
+                                    <div class="lb-prog">TRANSFORMAÇÃO<br />
+                                        DIGITAL</div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width:81%"></div>
+                                      </div>
+                                    <div class="percent">85%</div>                              
+                                </div>   
+                            </div>
+                        </div>
+                        <div class="container-text txt-grafic mb-0 ">
+                            ​<p>
+                               <strong>Estratégia Corporativa & ESG​</strong> <br />
+                               Estratégia Corporativa & ESG​
+                               A ArcelorMittal adapta-se com facilidade às mudanças de mercado mantendo-se em sintonia com o seu 
+                               propósito. Também possui padrões e regras claras de governança e transparência, bem como políticas e 
+                               práticas de responsabilidade social, ética e de sustentabilidade. 
+                               
+                            </p>
+                        </div>
+
+                        <div class="container-text txt-grafic mb-0 mt-1">
+                            ​<p>
+                               <strong>Liderança & Estratégia de Inovação​
+                                </strong> <br />
+                                A organização possui forte orientação para inovação, explorando oportunidades e procurando realizar 
+                                melhorias contínuas em produtos e serviços. Há ousadia para tentar fazer iniciativas que nunca foram 
+                                feitas antes, incentivadas por uma liderança comprometida em oferecer condições adequadas, valorizando 
+                                a criatividade e a troca de experiências. Porém, nem todos tem clareza adequada sobre o conceito de 
+                                inovação adotado pela empresa. Principalmente a respeito de inovações disruptivas e suas implicações 
+                                com relação a produtos, serviços e modelos de negócios. 
+                                
+                               
+                            </p>
+                        </div>
+
+                        <div class="container-text txt-grafic mb-0 mt-1">
+                            ​<p>
+                               <strong>Transformação Digital​
+                            </strong> <br />
+                            É uma realidade prática e cultural, na melhoria de produtos, processos e na relação sinergicamente 
+                            positiva entre colaboradores e tecnologias. 
+                               
+                            </p>
+                        </div>
+                        <div class="align-center pd-bt-44">
+                            <button class="bt-detalhes">VER EM DETALHES</button>
+                        </div>
+                    </article>
+                </section>
+
+                <section class="section">
+                    <article>
+                        <div class="head-section">
+                            <p class="titulo"><strong>INTELIGÊNCIA & IDEAÇÃO
+                            </strong></p>
+                            <p class="subtitulo">INTERMEDIÁRIO</p>
+                        </div>
+
+                        <div class="outer brs">
+                            <div class="img-gr">
+                                <img src="assets/graficos/meia_pizza_branco/77n.svg">
+                            </div>
+                            <div class="grupo-barras">
+
+                                <div class="barras">
+                                    <div class="lb-prog">Realização</div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width:81%"></div>
+                                      </div>
+                                    <div class="percent">81%</div>                              
+                                </div>
+
+                                <div class="barras">
+                                    <div class="lb-prog">INTELIGÊNCIA <br />
+                                        PARA INOVAÇÃO</div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-success  progress-bar-striped progress-bar-animated" style="width:76%"></div>
+                                      </div>
+                                    <div class="percent">76%</div>                              
+                                </div>
+
+                                <div class="barras">
+                                    <div class="lb-prog">P&D</div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width:75%"></div>
+                                      </div>
+                                    <div class="percent">75%</div>                              
+                                </div>                            
+                            </div>
+                        </div>
+                        <div class="container-text txt-grafic mb-0">
+                            ​<p>
+                                <strong>Inteligência Endógena
+                                </strong> <br />
+                                Existe clareza conceitual quanto as contribuições de novos produtos e serviços para o 
+                                resultado da empresa. Entretanto, há uma oportunidade em identificar OKRs & KPIs 
+                                relacionados as inovações, especialmente quando estes são financeiros. 
+                                
+                            </p>
+
+                            </div>
+
+                            <div class="container-text txt-grafic mb-0 mt-1">
+
+                            ​<p>
+                                <strong>Inteligência Exógena
+
+                                </strong> <br />
+                                A ArcelorMittal monitora tendências, comportamentos dos clientes, concorrência e faz uso 
+                                adequado de pesquisas externas. Porém ainda não há um domínio de ferramentas de 
+                                insights/aprendizado para inovação, como Design Thinking, Trend Hunting etc. Domina-las 
+                                poderia aumentar a velocidade da empresa. 
+                                
+                                
+                            </p>
+
+                            </div>
+                            <div class="container-text txt-grafic mb-0 mt-1">
+
+                            ​<p>
+                                <strong>Cultura de Dados
+
+                                </strong> <br />
+                                Faz parte do dia a dia o uso de análises avançadas para desenvolver novas ideias e estratégias 
+                                com base em dados. O maior gap está relacionado ao Data Analytics em termos de estrutura 
+                                e competências que permitam a ArcelorMittal evoluir para a exploração e o uso oportuno da 
+                                inteligência artificial.  
+                                
+                                
+                            </p>
+
+                            </div>
+                            <div class="container-text txt-grafic mb-0 mt-1">
+
+                            ​<p>
+                                <strong>Pesquisa & Desenvolvimento </strong>
+
+                                    Existem processos bem estruturados de P&D, e a equipe tem liberdade para influenciar as 
+                                    estratégias de inovação. Entretanto existe a percepção que o orçamento da área ainda não é 
+                                    suficiente para gerar propriedade intelectual que traga vantagens competitivas.  	
+                                
+                            </p>
+                        </div>
+                        <div class="align-center pd-bt-44">
+                            <button class="bt-detalhes">VER EM DETALHES</button>
+                        </div>
+                    </article>
+                </section>
+
+                <section class="section">
+                    <article>
+                        <div class="head-section">
+                            <p class="titulo"><strong>DESENVOLVIMENTO & GESTÃO</strong></p>
+                            <p class="subtitulo">INTERMEDIÁRIO</p>
+                        </div>
+
+                        <div class="outer brs">
+                            <div class="img-gr">
+                                <img src="assets/graficos/meia_pizza_branco/77n.svg">
+                            </div>
+
+                            <!-- classes
+                                bg-success = verde
+                                bg-info = azul
+                                bg-warning = amarelo
+                            -->
+
+                            <div class="grupo-barras">
+                         
+
+                                <div class="barras">
+                                    <div class="lb-prog">GOVERNANÇA</div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width:82%"></div>
+                                      </div>
+                                    <div class="percent">82%</div>                              
+                                </div>
+
+                                <div class="barras">
+                                    <div class="lb-prog">GESTÃO & <br />
+                                        EXECUÇÃO
+                                        DIGITAL</div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width:73%"></div>
+                                      </div>
+                                    <div class="percent">73 %</div>                              
+                                </div>  
+
+                                <div class="barras">
+                                    <div class="lb-prog">INOVAÇÃO ABERTA </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" style="width:81%"></div>
+                                      </div>
+                                    <div class="percent">81%</div>                              
+                                </div>
+
+                                <div class="barras">
+                                    <div class="lb-prog">DESENVOLVIMENTO 
+                                        TECNOLÓGICO </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width:76%"></div>
+                                      </div>
+                                    <div class="percent">76%</div>                              
+                                </div>
+                                 
+                            </div>
+                        </div>
+                        <div class="container-text txt-grafic mb-0">
+                            ​<p>
+                               <strong>Estratégia Corporativa & ESG​</strong> <br />
+                               Estratégia Corporativa & ESG​
+                               A ArcelorMittal adapta-se com facilidade às mudanças de mercado mantendo-se em sintonia com o seu 
+                               propósito. Também possui padrões e regras claras de governança e transparência, bem como políticas e 
+                               práticas de responsabilidade social, ética e de sustentabilidade. 
+                               
+                            </p>
+                        </div>
+
+                        <div class="container-text txt-grafic mb-0 mt-1">
+                            ​<p>
+                               <strong>Liderança & Estratégia de Inovação​
+                                </strong> <br />
+                                A organização possui forte orientação para inovação, explorando oportunidades e procurando realizar 
+                                melhorias contínuas em produtos e serviços. Há ousadia para tentar fazer iniciativas que nunca foram 
+                                feitas antes, incentivadas por uma liderança comprometida em oferecer condições adequadas, valorizando 
+                                a criatividade e a troca de experiências. Porém, nem todos tem clareza adequada sobre o conceito de 
+                                inovação adotado pela empresa. Principalmente a respeito de inovações disruptivas e suas implicações 
+                                com relação a produtos, serviços e modelos de negócios. 
+                                
+                               
+                            </p>
+                        </div>
+
+                        <div class="container-text txt-grafic mb-0 mt-1">
+                            ​<p>
+                               <strong>Transformação Digital​
+                            </strong> <br />
+                            É uma realidade prática e cultural, na melhoria de produtos, processos e na relação sinergicamente 
+                            positiva entre colaboradores e tecnologias. 
+                               
+                            </p>
+                        </div>
+                        
+                        <div class="align-center pd-bt-44">
+                            <button class="bt-detalhes">VER EM DETALHES</button>
+                        </div>
+                    </article>
+                </section>
+
+
+                <section class="section">
+                    <article>
+                        <div class="head-section">
+                            <p class="titulo"><strong>RESULTADO & IMPACTO
+                            </strong></p>
+                            <p class="subtitulo">INTERMEDIÁRIO</p>
+                        </div>
+
+                        <div class="outer brs">
+                            <div class="img-gr">
+                                <img src="assets/graficos/meia_pizza_branco/77n.svg">
+                            </div>
+
+                            <!-- classes
+                                bg-success = verde
+                                bg-info = azul
+                                bg-warning = amarelo
+                            -->
+
+                            <div class="grupo-barras">
+                         
+
+                                <div class="barras">
+                                    <div class="lb-prog">AMPLITUDE 
+                                        COMPETITIVA 
+                                        & IMPACTO</div>
+                                    <div class="progress mt-4">
+                                        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width:88%"></div>
+                                      </div>
+                                    <div class="percent">88%</div>                              
+                                </div>
+
+                                <div class="barras">
+                                    <div class="lb-prog">DESTREZA DIGITAL</div>
+                                    <div class="progress mt-3">
+                                        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width:77%"></div>
+                                      </div>
+                                    <div class="percent">77%</div>                              
+                                </div>  
+
+                                <div class="barras">
+                                    <div class="lb-prog">MODELOS DE 
+                                        NEGÓCIO </div>
+                                    <div class="progress mt-2">
+                                        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width:82%"></div>
+                                      </div>
+                                    <div class="percent">82%</div>                              
+                                </div>
+
+                                <div class="barras">
+                                    <div class="lb-prog">ESG IMPACTO </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width:97%"></div>
+                                      </div>
+                                    <div class="percent">97%</div>                              
+                                </div>
+                                 
+                            </div>
+                        </div>
+                        <div class="container-text txt-grafic mb-0">
+                            ​<p>
+                               <strong>Amplitude da Inovação & Modelos de Negócios
+                            </strong> <br />
+                               A sua inovação é traduzida em produtos e serviços com alta diferenciação, desafiando os 
+                               concorrentes e tornando-os mais acessíveis e eficientes aos clientes. Existe um claro 
+                               entendimento do ciclo de vida de seus produtos para renovar seu portfólio antes que se torne 
+                               obsoleto. A grande oportunidade reside em criar iniciativas e modelos de negócios que vão 
+                               além de incrementais (H1) e complementares (H2), transcendendo para o transformativo / 
+                               disruptivo (H3).
+                               
+                               
+                            </p>
+                        </div>
+
+                        <div class="container-text txt-grafic mb-0 mt-1">
+                            ​<p>
+                               <strong>ESG Impacto
+
+                                </strong> <br />
+                                Sustentabilidade socioambiental é mais que um discurso, é uma prática estruturada na qual 
+                                a empresa gera benefícios também para as comunidades e o meio ambiente.	
+                                
+                               
+                            </p>
+                        </div>
+
+                        <div class="container-text txt-grafic mb-0 mt-1">
+                            ​<p>
+                               <strong>Transformação Digital​
+                            </strong> <br />
+                            É uma realidade prática e cultural, na melhoria de produtos, processos e na relação sinergicamente 
+                            positiva entre colaboradores e tecnologias. 
+                               
+                            </p>
+                        </div>
+                        
+                        <div class="align-center pd-bt-44">
+                            <button class="bt-detalhes">VER EM DETALHES</button>
+                        </div>
+                    </article>
+                </section>
+                
+
+                
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <a class="voltar-b" href=""><span>‹</span> Voltar</a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="assets/js/jquery-3.3.1.min.js">
+    </script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous">
+    </script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous">
+    </script>
+    <script src="assets/js/utils.js" type="text/javascript"></script>
+</body>
+
+</html>

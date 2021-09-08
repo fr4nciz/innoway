@@ -29,10 +29,7 @@
                     <img class="logo img-fluid" src="assets/imgs/logo.png">
                 </div>
 
-                <div class="search d-xl-none m-3">
-                    <input class="field-search pl-1" type="text" placeholder="Pesquisar Innopedia">
-                    <button class="lupa"></button>
-                </div>
+            
 
                 <ul class="list-unstyled components">
 
@@ -153,6 +150,11 @@
                         <span></span>
                     </button>
 
+                    <div class="search d-xl-none m-3">
+                        <input class="field-search pl-1" type="text" placeholder="Pesquisar Innopedia">
+                        <button class="lupa"></button>
+                    </div>
+
                     <button class="bt-data">
                         Dados >
                     </button>
@@ -160,9 +162,16 @@
                     <div class="header-content">
                         <button class="fechar-h">×</button>
 
-                        <div>
-                            <img src="assets/imgs/company-logo.svg">
+                   
+
+                        <div class="arce">
+                            <img src="assets/imgs/arcelormittal.png">
                         </div>
+
+                        <div class="logout-mob">
+                            <img onclick="javascript:changeOwner();" src="assets/imgs/logout.svg" alt="">
+                        </div>
+
                         <div class="box-header">
                             <div class="innovation-header">
                                 <span>Innovation Power</span>
@@ -181,16 +190,16 @@
                                 <span>flow de inovação</span><span>64%</span>
                             </div>
                         </div>
-                        <div>
+                        <div class="logout">
                             <img onclick="javascript:changeOwner();" src="assets/imgs/logout.svg" alt="">
-                        </div>
-
-                        <div class="search d-none d-xl-block">
-                            <input class="field-search" type="text" placeholder="Pesquisar Innopedia">
-                            <button class="lupa"></button>
                         </div>
                     </div>
                 </header>
+
+                <div class="search d-none d-xl-block text-right">
+                    <input class="field-search" type="text" placeholder="Pesquisar Innopedia">
+                    <button class="lupa"></button>
+                </div>
 
                 <section class="home rounded-3 mt-5">
                     <div class="row">
@@ -200,6 +209,10 @@
                                     <figure class="innovation-title">
                                         <img src="assets/imgs/innovation-title-own.svg" class="img-fluid p-3">
                                     </figure>
+
+                                    <figure class="innovation-title text-right">
+                                        <img src="assets/imgs/innoway.png" class="img-fluid p-3">
+                                    </figure>
                                 </article>
                             </div>
                         </div>
@@ -207,135 +220,87 @@
 
                     <div class="container">
                         <div class="row">
-                            <div class="col-lg-6 col-md-6 col-xs-12 p-4">
-                                <p class="score-level-section-one">Avançado</p>
-                                <div class="pontuacao-content">
-                                    <div class="pontuacao-section-one">
-                                        <p><strong>PONTUAÇÃO</strong><br> entre <strong>71</strong> a
-                                            <strong>87</strong>
-                                            pontos
-                                        </p>
-                                        <br>
-                                        <p><strong>DATA DE APLICAÇÃO</strong><br>Julho 2021</p>
+                            <div class="col-lg-12 col-md-12 col-xs-12 p-cst">
+                                <p>AGOSTO 2021</p>
+
+                                <div class="progress-grid">
+                                    <div class="prg step1 actv">
+                                        <div class="c_bar basic">BÁSICO</div>
+                                        <p>até 40 pontos</p>
+                                        <div class="val">81</div>
                                     </div>
-                                    <div class="score-section-one">
-                                        <span>71</span>
-                                        <p>score</p>
+                                    <!--Classe ativa (actv)-->
+                                    <div class="prg step2 ">
+                                        <div class="c_bar inter">INTERMEDIÁRIO</div>
+                                        <p>de 41 a 70 pontos</p>
+                                        <div class="val">81</div>
                                     </div>
+                                    <div class="prg step3">
+                                        <div class="c_bar avanc">AVANÇADO</div>
+                                        <p>de 71 a 87 pontos</p>
+                                        <div class="val">81</div>
+                                    </div>
+                                    <div class="prg step4">
+                                        <div class="c_bar flue">FLUENTE</div>
+                                        <p>de 88 a 100 pontos</p>
+                                        <div class="val">81</div>
+                                    </div>
+
+                                </div>
+
+
+
+                            </div>
+
+                            <div class="infinit">
+                                <div class="t-inf-1">
+                                    <h5>PESSOAS</h5>
+                                    <span>80%</span>
+                                </div>
+                                <div class="inf">
+                                    <img src="assets/imgs/infinito.png" class="img-fluid mt-4 mb-4">
+                                </div>
+                                <div class="t-inf-2">
+                                    <h5>FLOW DE <br /> INOVAÇÃO</h5>
+                                    <span>80%</span>
                                 </div>
                             </div>
 
-                            <div class="col-lg-6 col-md-6 col-xs-12 p-4">
-                                <img src="assets/imgs/logo-name.jpeg" class="img-fluid mt-4">
+                            <div class="text-infinty">
+                                <p>
+                                    O <em>Innovation Power</em> indica o potencial de uma organização para evoluir e
+                                    inovar mais.
+                                    Essa medida é exclusiva da maturidade da cultura de inovação, e também reflete o
+                                    quanto
+                                    a empresa é capaz de ser relevante, competitiva e garantir crescimento sustentável.
+                                    O Innovation Power é o resultado da medição e análise de 2 pilares fundamentais:
+                                    <strong>Pessoas</strong> e <strong>Flow de Inovação</strong>.
+                                    <p>
+                                        Pessoas: avalia a capacidade intraempreendedora combinada a uma cultura
+                                        adaptável
+                                        para responder com agilidade às mudanças e evoluções dos ambientes internos e
+                                        externos.
+                                    </p>
+
+                                    <p>
+                                        Flow de inovação: apresenta um caminho para que a inovação seja gerenciada como
+                                        uma ciência organizada. Traz uma estrutura sustentável para que as organizações
+                                        possam
+                                        implementar iniciativas incrementais e obter resultados consistentes.
+                                    </p>
+
+                                </p>
+
+
                             </div>
                         </div>
 
-                        <div class="row">
-                            <div class="col-lg-6 col-md-6 col-xs-12 p-4">
-                                <div>
-                                    <p class="header-text-section-one">Conceitos</p>
-                                    <p class="title-text-section-one">pessoas</p>
-                                    <p class="text-section-one">Baseada no conceito AGILE, demonstra o equilíbrio da
-                                        tríade
-                                        RESULTADO, RELACIONAMENTO e APRENDIZADO. Somada ao poder
-                                        da DIVERSIDADE, indica a agilidade para se adaptar às rápidas e constantes
-                                        mudanças e
-                                        evoluções do ambiente externo.</p>
-                                    <p class="title-text-section-one">flow de inovação</p>
-                                    <p class="text-section-one">A inovação se tornou sinônimo de relevância e
-                                        longevidade para
-                                        as organizações. Neste contexto, é necessário ir além da
-                                        criatividade e do desenvolvimento orgânico. Para ser competitivo, é
-                                        importante
-                                        gerir o
-                                        “Inovar” como uma ciência
-                                        organizada e
-                                        estruturada. O Flow, detalhado aqui, traz uma abordagem sustentável para que
-                                        organizações possam evoluir sua cultura de
-                                        inovação com métricas e resultados consistentes.</p>
-                                </div>
-                            </div>
 
-                            <div class="col-lg-6 col-md-6 col-xs-12 p-4 text-center">
-
-                                <div class="txt-inf">
-                                    <h3>PESSOAS </h3>
-
-                                    <h3>FLOW DE <br />
-                                        INOVAÇÃO</h3>
-
-                                </div>
-                                <img src="assets/imgs/infiniy-score.png" class="img-fluid">
-                            </div>
-                        </div>
                     </div>
                 </section>
 
 
-                <section class="section two">
-                    <article class="second-header">
-                        <div>
-                            <h2>MATURIDADE DE INOVAÇÃO POR INDICADOR</h2>
-                        </div>
 
-                        <div class="maturidade fluente line">
-                            <div>
-                                <span>FLUENTE</span>
-                                <p>de 88 pontos em diante</p>
-                            </div>
-                            <div class="margem-maturidade">
-                                <div class="areas">INTRAEMPREENDEDORISMO</div>
-                                <div class="areas">ADAPTABILIDADE</div>
-                                <div class="areas">ESTRATÉGIA &amp; LIDERANÇA</div>
-                                <div class="areas">RESULTADO &amp; IMPACTO</div>
-                                <div class="areas">DESENVOLVIMENTO &amp; GESTÃO</div>
-                                <div class="areas">INTELIGÊNCIA &amp; IDEAÇÃO</div>
-                            </div>
-                        </div>
-                        <div class="maturidade avancado line">
-                            <div>
-                                <span>AVANÇADO</span>
-                                <p>de 71 a 87 pontos</p>
-                            </div>
-                            <div class="margem-maturidade">
-                                <div class="areas">INTRAEMPREENDEDORISMO</div>
-                                <div class="areas">ADAPTABILIDADE</div>
-                                <div class="areas">ESTRATÉGIA &amp; LIDERANÇA</div>
-                                <div class="areas">RESULTADO &amp; IMPACTO</div>
-                                <div class="areas">DESENVOLVIMENTO &amp; GESTÃO</div>
-                                <div class="areas">INTELIGÊNCIA &amp; IDEAÇÃO</div>
-                            </div>
-                        </div>
-                        <div class="maturidade intermediario line">
-                            <div>
-                                <span>INTERMEDIÁRIO</span>
-                                <p>de 41 a 70 pontos</p>
-                            </div>
-                            <div class="margem-maturidade">
-                                <div class="areas">INTRAEMPREENDEDORISMO</div>
-                                <div class="areas">ADAPTABILIDADE</div>
-                                <div class="areas">ESTRATÉGIA &amp; LIDERANÇA</div>
-                                <div class="areas">RESULTADO &amp; IMPACTO</div>
-                                <div class="areas">DESENVOLVIMENTO &amp; GESTÃO</div>
-                                <div class="areas">INTELIGÊNCIA &amp; IDEAÇÃO</div>
-                            </div>
-                        </div>
-                        <div class="maturidade basico">
-                            <div>
-                                <span>BÁSICO</span>
-                                <p>até 40 pontos</p>
-                            </div>
-                            <div class="margem-maturidade">
-                                <div class="areas">INTRAEMPREENDEDORISMO</div>
-                                <div class="areas">ADAPTABILIDADE</div>
-                                <div class="areas">ESTRATÉGIA &amp; LIDERANÇA</div>
-                                <div class="areas">RESULTADO &amp; IMPACTO</div>
-                                <div class="areas">DESENVOLVIMENTO &amp; GESTÃO</div>
-                                <div class="areas">INTELIGÊNCIA &amp; IDEAÇÃO</div>
-                            </div>
-                        </div>
-                    </article>
-                </section>
 
                 <section class="section three">
                     <article class="third-header col-lg-12">
@@ -512,6 +477,54 @@
                     </article>
                 </section>
 
+                <section class="section two">
+                    <div class="row">
+
+                        <div class="col-lg-12 col-md-12 col-xs-12 p-cst">
+                            <div class="titulo">
+                                <h2>MATURIDADE DE INOVAÇÃO POR INDICADOR</h2>
+                            </div>
+
+
+                            <div class="progress-grid mt-0">
+                                <div class="prg step1 bdr">
+                                    <div class="c_bar basic">BÁSICO</div>
+                                    <p>até 40 pontos</p>                             
+
+                                </div>
+                                <!--Classe ativa (actv)-->
+                                <div class="prg step2 bdr">
+                                    <div class="c_bar inter">INTERMEDIÁRIO</div>
+                                    <p>de 41 a 70 pontos</p>
+
+                                </div>
+                                <div class="prg step3 bdr">
+                                    <div class="c_bar avanc">AVANÇADO</div>
+                                    <p>de 71 a 87 pontos</p>
+
+                                    <hr />
+
+                                    <p class="psec">- Intraempreendedorismo <span>87</span></p>
+                                    <p class="psec"> - Resultado & Impacto <span>85</span></p>
+                                    <p class="psec"> - Estratégia & Liderança <span>83</span></p>
+                                    <p class="psec"> - Adaptabilidade <span>80</span></p>
+                                    <p class="psec">- Inteligência & Ideação <span>76</span></p>
+                                    <p class="psec"> - Desenvolvimento & Gestão <span>74</span></p>
+
+                                </div>
+                                <div class="prg step4 bdr">
+                                    <div class="c_bar flue">FLUENTE</div>
+                                    <p>de 88 a 100 pontos</p>
+                                    <div class="val">81</div>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </section>
 
                 <section class="section five">
                     <article>
@@ -522,18 +535,11 @@
                             </div>
                             <div class="text-section-five bord">
                                 <span>PESSOAS</span>
-                                <p>Estruturar e sistematizar a aprendizagem organizacional como vínculo entre o
-                                    indivíduo e
-                                    o coletivo, para genuinamente
-                                    pensar inovação como um time e não como uma área específica responsável pela
-                                    inovação.
-                                </p>
-                            </div>
-                            <div class="text-section-five">
-                                <span>FLOW DE INOVAÇÃO</span>
-                                <p>Desenvolver um grid central de inovação que traga clareza de objetivos
-                                    (mercadológicos e
-                                    financeiros – CPIs &amp; KPIs) e entregáveis para todas as áreas da organização.
+                                <p>Programa dedicado a iniciativas Disruptivas com potencial de definição de 
+                                    tendências transformativas nos mercados foco da planta de Vega.    </p>
+                                    <p>    
+                                    Fortalecer a estrutura Data Analytics para criar maturidade de dados que 
+                                    acelere o desenvolvimento e torne padrão o uso de Inteligência Artificial.                             
                                 </p>
                             </div>
                         </div>
@@ -590,11 +596,11 @@
 
                 </section>
 
-                <section class="container">
+                <section>
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
                             <article class="bg-gray-3 border-radius-20">
-    
+
                                 <div class="box-1 fdcol jcfend h64">
                                     <div class="center">
                                         <img src="assets/imgs/data-own.svg" class="img-fluid">
@@ -603,13 +609,13 @@
                                         <p class="fs25 fcb mt-3 mb-0"><strong>ANÁLISE BENCHMARK</strong></p>
                                         <button class="bt-detalhes mt20">EM BREVE</button>
                                     </div>
-    
+
                                 </div>
                             </article>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
                             <article class="bg-gray-3 border-radius-20 bg-gray-3">
-    
+
                                 <div class="box-1 fdcol jcfend h64">
                                     <div class="center">
                                         <img src="assets/imgs/increasing-own.svg" class="img-fluid">
@@ -618,13 +624,11 @@
                                         <p class="fs25 fcb"><strong>CONFIABILIDADE<br>&amp; METODOLOGIA</strong></p>
                                         <button class="bt-detalhes">VER EM DETALHES</button>
                                     </div>
-    
+
                                 </div>
                             </article>
                         </div>
                     </div>
-        
-
                 </section>
 
             </div>

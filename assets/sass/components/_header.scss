@@ -111,6 +111,8 @@ header {
 
 
 
+@media only screen and (min-width: 500px) {
+
 .small {
     position: fixed;
     transition:all .2s ease;
@@ -123,7 +125,7 @@ header {
     .score-header {
         font-size: 20px;
         padding: 0;
-        margin: 14px 0 0 10px;
+        margin: 10px 0 0 0;
         text-align: center;
 
         p {
@@ -150,8 +152,21 @@ header {
     
 
 }
+}
 
 
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 124px;
+    background-color: #E5E5E5;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
 
 
 
@@ -160,13 +175,15 @@ header {
     justify-content: space-around;
     align-items: center;
     background: var(--black-800);
-    padding: 10px;
+    padding: 20px 10px;
     width: 100%;
-     border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+     border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
     flex-direction: row;
     flex-wrap: wrap;
 }
