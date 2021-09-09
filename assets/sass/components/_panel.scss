@@ -353,7 +353,7 @@ section.box-black {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 30%;
+        width: 40%;
         padding: 15px;
         img {
             max-width: 300px;
@@ -363,9 +363,11 @@ section.box-black {
     .section-text {
         margin-top: 0;
         display: flex;
-        width: 70%;
+        width: 60%;
         flex-direction: column;
-        padding: 15px 8% 0 8%;
+        padding: 15px 4% 0 3%;
+        border-left: 1px solid var(--primary-font-color);
+        margin-left: 15px;
     }
 
     .title-grafics {

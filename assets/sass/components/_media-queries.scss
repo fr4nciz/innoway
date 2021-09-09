@@ -200,6 +200,11 @@
 
 @media only screen and (max-width: 990px) {
 
+    section.box-black .title-grafics {
+        font-size: 16px;
+
+    }
+
     .boxb .box{
         text-align: center;
         display: flex;
@@ -647,6 +652,34 @@
         letter-spacing: 2px;
     }
 
+    
+    .boxer4 {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .boxer4 .txt-percent {  
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: nowrap;
+        align-content: center;
+        align-items: center;
+        border-right: 2px solid var(--gray-500);
+        width: 50%;
+        &:nth-child(2) {
+            border-right: 0;
+        }
+    }
+
+    .boxer4 .txt-percent p {
+        font-size: 36px;
+        font-weight: 800;
+    }
+
+    .boxer4 .txt-percent h4 {
+        font-size: 12px;
+    }
+
 }
 
 @media only screen and (max-width: 500px) {
@@ -705,11 +738,26 @@
     }
 
 
-
-
 }
 
 @media only screen and (max-width: 500px) {
+
+    .boxer1 h2 span {
+    
+        margin-right: 40px;
+    }
+    .boxer1 .barra-p .progress {
+        width: 80%;       
+    }
+    .boxer1 .barra-p .percent {
+        width: 20%;
+    }
+    .boxer2 .txt-percent p {
+        font-size: 36px;
+       }
+       .boxer2 .txt-percent h4 {
+        font-size: 12px;
+       }
 
     .barras .lb-prog {
         width: 30%;
@@ -757,7 +805,14 @@
 
     .arce {
         width: 50%;
+        img {
+            position: relative;
+    right: 30px;
+    top: -10px;
+    width: 100%
+        }
     }
+
 
     .logout {
         display: none;
@@ -854,6 +909,11 @@
 }
 
 @media only screen and (max-width: 400px) {
+
+    section.sec-peaple {
+     
+        width: 100%;
+    }
 
     .barras .lb-prog {
         width: 35%;
