@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Innoway</title>
+
+    <!-- Our Custom CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,500,800" el='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Font Awesome JS -->
+
+
+</head>
+
+<body class="own-report">
+
+    <div class="container">
+
+        <div class="wrapper">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar" class="sidebar_r">
+                <button class="fechar-menu">×</button>
+                <div class="sidebar-header mt-4 mb-2">
+                    <a href="index.html"><img class="logo img-fluid" src="assets/imgs/logo.png"></a>
+                </div>
+
+
+
+                <ul class="list-unstyled components">
+
+                    <li>
+                        <a href="#">RESULTADO</a>
+                    </li>
+
+                    <li>
+                        <a href="recomendacao.html">RECOMENDAÇÕES</a>
+                    </li>
+
+
+                    <li>
+                        <a href="pessoas.html">PESSOAS</a>
+                        <ul class="show collapse list-unstyled" id="sub1">
+                            <li>
+                                <a href="intraempreendedorismo.html"><span>•</span> Intraempreendedorismo</a>
+                            </li>
+                            <li>
+                                <a href="adaptablidade.html"><span>•</span> Adaptabilidade</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">DNA PARA INOVAÇÃO</a>
+                    </li>
+
+
+
+                    <li>
+                        <a href="flow-inovacao.html">FLOW DE
+                            INOVAÇÃO</a>
+                        <ul class="show collapse list-unstyled" id="sub2">
+                            <li>
+                                <a href="flow-inovacao-estrategia-lideranca.html"><span>•</span> Estratégia &
+                                    Liderança</a>
+                            </li>
+                            <li>
+                                <a href="flow-inovacao-inteligencia-ideacao.html"><span>•</span> Inteligência &
+                                    Ideação</a>
+                            </li>
+
+                            <li>
+                                <a href="flow-inovacao-dev-gestao.html"><span>•</span> Desenvolvimento & Gestão</a>
+                            </li>
+
+                            <li>
+                                <a href="flow-inovacao-resultado-impacto.html"><span>•</span> Resultado & Impacto</a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="flow-inovacao-vetores-inovacao.html">VETORES DE INOVAÇÃO</a>
+                    </li>
+
+
+                    <li>
+                        <a href="#">ANÁLISE
+                            BENCHMARK</a>
+                        <ul class="show collapse list-unstyled" id="sub3">
+                            <li>
+                                <a href="#"><span>•</span> Innoway <span>(em breve)</span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span>•</span> Setorial <span>(em breve)</span></a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="active">
+                        <a href="#">INNOPEDIA</a>
+                    </li>
+
+                    <li>
+                        <a href="#">DEMOGRÁFICOS</a>
+                    </li>
+
+                    <li>
+                        <a href="#">CONFIABILIDADE &
+                            METODOLOGIA</a>
+                    </li>
+
+
+
+
+
+
+                    <li>
+                        <a href="#">DOWNLOADS</a>
+                        <ul class="show collapse list-unstyled" id="sub4">
+                            <li>
+                                <a href="#">Apresentação Resultados</a>
+                            </li>
+                            <li>
+                                <a href="#">DATABASE <span>(perguntas abertas)</span> </a>
+                            </li>
+                            <li>
+                                <a href="#">selo ACATE Innoway</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+            <!-- Page content  -->
+            <div id="content">
+
+                <header>
+
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
+                    <div class="search d-xl-none m-3">
+                        <input class="field-search pl-1" type="text" placeholder="Pesquisar Innopedia">
+                        <button class="lupa"></button>
+                    </div>
+
+                    <button class="bt-data">
+                        Dados >
+                    </button>
+
+                    <div class="header-content">
+                        <button class="fechar-h">×</button>
+
+
+
+                        <div class="arce">
+                            <img src="assets/imgs/arcelormittal.png">
+                        </div>
+
+                        <div class="logout-mob">
+                            <img onclick="javascript:changeOwner();" src="assets/imgs/logout.svg" alt="">
+                        </div>
+
+                        <div class="box-header">
+                            <div class="innovation-header">
+                                <span>Innovation Power</span>
+                                <p>avançado</p>
+                            </div>
+                            <div class="score-header">
+                                <span>75</span>
+                                <p>score</p>
+                            </div>
+                        </div>
+                        <div class="box-header">
+                            <div class="peaple-header">
+                                <span>pessoas</span><span>77%</span>
+                            </div>
+                            <div class="flow-header">
+                                <span>flow de inovação</span><span>64%</span>
+                            </div>
+                        </div>
+                        <div class="logout">
+                            <img onclick="javascript:changeOwner();" src="assets/imgs/logout.svg" alt="">
+                        </div>
+                    </div>
+                </header>
+
+                <div class="search d-none d-xl-block text-right">
+                    <input class="field-search" type="text" placeholder="Pesquisar Innopedia">
+                    <button class="lupa"></button>
+                </div>
+       
+                <div class="titulo text-left mt-5 sec-home ">
+                    <h2 class=" p-0 pb-3">CONFIABILIDADE & METODOLOGIA <a class="voltar float-right" href=""><span>‹</span> Voltar</a></h2>
+                </div>
+
+
+                <section class="section one txt-confi">
+                    <div class="container-text">
+                        <div>
+                            <p class="text-section-one"></p>
+
+                            <p class="title-text-section-one">Confiabilidade </p>
+                            <p class="text-section-one">Para 95% de grau de confiança, a margem de erro aleatório da amostra foi de 9% para a amostra com 
+                                101 respondentes com qualidade.
+                                
+                                .</p>
+
+                            <p class="title-text-section-one">Sobre a metodologia quantitativa:​
+                            </p>
+                            <p class="text-section-one">
+                                
+                                A pesquisa quantitativa, em linhas gerais, é um tipo de pesquisa centrada na objetividade para quantificar os 
+                                dados para responder um questionamento. ​
+                            </p>
+                            <p class="text-section-one">   ​
+                                Especialmente para o contexto de cultura de inovação, que pode ser visto como um conceito abstrato, a pesquisa 
+                                quantitativa permite atingir um diagnóstico tangível e ações práticas para transformação de cultura, a partir da 
+                                perspectiva dos colaboradores de grandes, médias, pequenas, microempresas – tradicionais ou digitalmente 
+                                nativas (como startups). ​
+                            </p>
+                            <p class="text-section-one">  ​
+                                A quantificação, nesse caso, se dá na forma de coleta dos dados via questionário estruturado 
+                                de autopreenchimento através de abordagem online, que possui medição padronizada e numérica, cujos 
+                                resultados são analisados ao fim do estudo. ​
+
+                                
+                                </p>
+
+                                <h3>
+                                    Assim, para o diagnóstico preciso e confiável, foram considerados como pontos principais:​
+
+                                </h3>
+
+                            <p class="title-text-section-one fmin">1. Clareza na definição do propósito e dos conceitos avaliados​</p>
+                            <p class="text-section-one">O projeto Cultura de Inovação se iniciou a partir do levantamento exploratório de estudos anteriores sobre o tema, 
+                                com base em referências acadêmicas e levantamentos executados junto a associações e entidades privadas. Essa 
+                                primeira etapa exploratória possibilitou o conhecimento teórico necessário para o planejamento de uma pesquisa 
+                                quantitativa a partir da seleção de variáveis e abordagens que maximizassem a clareza e a objetividade na 
+                                definição dos construtos necessários ao diagnóstico.​
+                                
+                                </p>
+
+                            <p class="title-text-section-one fmin">2. Representatividade​
+                            </p>
+                            <p class="text-section-one">
+                                
+                                Estudos por amostragem devem ser representativos do universo estudado no que diz respeito às distribuições 
+                                por perfil ou demais características que possam interferir nos resultados. Neste estudo não houve seleção por 
+                                sorteio já que a totalidade de colaboradores aptos a responder foi contemplada, com boa 
+                                taxa de retorno, garantindo assim que a amostra final represente bem o universo pesquisado.
+
+                                </p>
+
+                            <p class="title-text-section-one fmin">3. Confiabilidade – Erros sistemáticos​</p>
+                            <p class="text-section-one">No intuito de controlar possíveis fontes de erros sistemáticos, foram adotados os controles descritos a seguir.​
+
+
+                            </p>
+
+                            <p class="title-text-section-one fmin">No planejamento:​
+                            </p>
+                            <p class="text-section-one">- Questionário estruturado com a totalidade das perguntas em uma mesma escala de concordância, de fácil 
+                                entendimento.​ <br />
+                                - Questionário abrangente o suficiente para cobrir todos os conceitos relevantes ao diagnóstico e avaliado em pré-
+                                testes para garantir qualidade de respostas.​
+                                </p>
+
+                            <p class="title-text-section-one fmin"><span>•</span> AUTONOMIA</p>
+                            <p class="text-section-one">Fator individual que demonstra o potencial que uma pessoa pode ter para obter um bom desempenho na 
+                                autogestão das suas tarefas. 
+                                ​</p>
+
+                         
+                            <p class="title-text-section-one fmin">Na execução do levantamento: ​
+                            </p>
+                            <p class="text-section-one">
+                                - Garantia de anonimato explicitada a todos os respondentes.​ <br />
+                                - Avaliação de respostas a partir de coleta parcial, para assegurar a adequabilidade do questionário
+                            ​</p>
+
+                            <p class="title-text-section-one fmin">Na análise dos resultados:​ </p>
+                            <p class="text-section-one">- Análise crítica de qualidade de todo o material, buscando evidências de todo tipo de inconsistência que pudesse 
+                                comprometer os resultados. Esta avaliação assegurou que o nível de entendimento foi alto, com baixos índices de 
+                                não resposta (não entendimento) e inexistência de tendências devido a cansaço. Frases com maior dispersão nas 
+                                respostas tiveram esse padrão justificado pela própria natureza do conceito avaliado. ​<br />
+                                - Como é habitual em estudos de mercado, foram desconsiderados das análises os questionários com padrões de 
+                                preenchimento repetitivos, apresentando mais de 85% de respostas iguais. Essa ocorrência, que habitualmente 
+                                fica entre 5 e 20% em pesquisas de mercado, neste estudo foi de 18,5% na amostra da pesquisa, reforçando a alta 
+                                qualidade das respostas.​ <br />
+                                - O tratamento estatístico dos dados considerou na análise exploratória, além de medidas descritivas de posição e 
+                                dispersão, outros métodos multivariados tais como análise fatorial e análise de correlações, com a finalidade de 
+                                identificar o grau e a direção das relações entre variáveis. Os resultados não evidenciaram nenhuma relação 
+                                injustificada e validaram, através de análises confirmatórias, os agrupamentos adotados na composição dos 
+                                pilares de inovação.​
+                                
+                                ​</p>
+
+                            <p class="title-text-section-one fmin">Comentários finais:​
+                            </p>
+                            <p class="text-section-one">Assim, tendo em vista o processo de análise deste estudo, podemos atestar a representatividade da amostra 
+                                estudada e a confiabilidade dos resultados.
+                                
+                            </p>
+
+                        </div>
+                    </div>
+                </section>
+
+
+
+                <div class="row">
+                    <div class="col-lg-12 text-center mt-4">
+                        <a class="voltar-b" href=""><span>‹</span> Voltar</a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="assets/js/jquery-3.3.1.min.js">
+    </script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous">
+    </script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous">
+    </script>
+    <script src="assets/js/utils.js" type="text/javascript"></script>
+</body>
+
+</html>
