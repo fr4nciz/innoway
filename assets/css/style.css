@@ -6995,11 +6995,14 @@ header {
       height: 45px; }
     .small .score-header {
       font-size: 20px;
-      padding: 0;
+      padding: 5px;
       margin: 10px 0 0 0;
       text-align: center; }
       .small .score-header p {
         padding: 2px; }
+      .small .score-header span {
+        height: 24px;
+        margin-top: 8px; }
     .small .innovation-header p {
       width: 100%;
       display: block;
