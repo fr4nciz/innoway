@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Innoway</title>
+
+    <!-- Our Custom CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,500,800" el='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Font Awesome JS -->
+
+
+</head>
+
+<body class="own-report">
+
+    <div class="container">
+
+        <div class="wrapper">
+     
+            
+            <nav id="sidebar" class="sidebar_r">
+                <button class="fechar-menu">×</button>
+                <div class="sidebar-header mt-4 mb-2">
+                    <a href="index.html"><img class="logo img-fluid" src="assets/imgs/logo.png"></a>
+                </div>
+
+            
+
+                <ul class="list-unstyled components">
+
+                    <li>
+                        <a href="flow-inovacao-resultado-impacto.html">RESULTADO</a>
+                    </li>
+
+                    <li>
+                        <a href="recomendacao.html">RECOMENDAÇÕES</a>
+                    </li>
+
+
+                    <li>
+                        <a href="pessoas.html">PESSOAS</a>
+                        <ul class="show collapse list-unstyled" id="sub1">
+                            <li>
+                                <a href="intraempreendedorismo.html">• Intraempreendedorismo</a>
+                            </li>
+                            <li>
+                                <a href="adaptablidade.html">• Adaptabilidade</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="dia-para-inovacao.html">DNA PARA INOVAÇÃO</a>
+                    </li>
+
+
+
+                    <li>
+                        <a href="flow-inovacao.html" >FLOW DE
+                            INOVAÇÃO</a>
+                        <ul class="show collapse list-unstyled" id="sub2">
+                            <li>
+                                <a href="flow-inovacao-estrategia-lideranca.html">• Estratégia & Liderança</a>
+                            </li>
+                            <li>
+                                <a href="flow-inovacao-inteligencia-ideacao.html">• Inteligência & Ideação</a>
+                            </li>
+
+                            <li>
+                                <a href="flow-inovacao-dev-gestao.html">• Desenvolvimento & Gestão</a>
+                            </li>
+
+                            <li>
+                                <a href="flow-inovacao-resultado-impacto.html">• Resultado & Impacto</a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="flow-inovacao-vetores-inovacao.html">VETORES DE INOVAÇÃO</a>
+                    </li>
+
+
+                    <li>
+                        <a href="#">ANÁLISE
+                            BENCHMARK</a>
+                        <ul class="show collapse list-unstyled" id="sub3">
+                            <li>
+                                <a href="#">• Innoway <span>(em breve)</span></a>
+                            </li>
+                            <li>
+                                <a href="#">• Setorial <span>(em breve)</span></a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="innopedia.html">INNOPEDIA</a>
+                    </li>
+
+                    <li class="active">
+                        <a href="demograficos.html">DEMOGRÁFICOS</a>
+                    </li>
+
+                    <li>
+                        <a href="confiabilidade.html">CONFIABILIDADE &
+                            METODOLOGIA</a>
+                    </li>
+
+
+
+
+
+
+                    <li>
+                        <a href="#">DOWNLOADS</a>
+                        <ul class="show collapse list-unstyled" id="sub4">
+                            <li>
+                                <a href="#">Apresentação Resultados</a>
+                            </li>
+                            <li>
+                                <a href="#">DATABASE <span>(perguntas abertas)</span> </a>
+                            </li>
+                            <li>
+                                <a href="#">selo ACATE Innoway</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+            <!-- Page content  -->
+            <div id="content">
+
+                <header>
+
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
+                    <div class="search d-xl-none m-3">
+                        <input class="field-search pl-1" type="text" placeholder="Pesquisar Innopedia">
+                        <button class="lupa"></button>
+                    </div>
+
+                    <button class="bt-data">
+                        Dados >
+                    </button>
+
+                    <div class="header-content">
+                        <button class="fechar-h">×</button>
+
+
+
+                        <div class="arce">
+                            <img src="assets/imgs/arcelormittal.png">
+                        </div>
+
+                        <div class="logout-mob">
+                            <img onclick="javascript:changeOwner();" src="assets/imgs/logout.svg" alt="">
+                        </div>
+
+                        <div class="box-header">
+                            <div class="innovation-header">
+                                <span>Innovation Power</span>
+                                <p>avançado</p>
+                            </div>
+                            <div class="score-header">
+                                <span>75</span>
+                                <p>score</p>
+                            </div>
+                        </div>
+                        <div class="box-header">
+                            <div class="peaple-header">
+                                <span>pessoas</span><span>77%</span>
+                            </div>
+                            <div class="flow-header">
+                                <span>flow de inovação</span><span>64%</span>
+                            </div>
+                        </div>
+                        <div class="logout">
+                            <img onclick="javascript:changeOwner();" src="assets/imgs/logout.svg" alt="">
+                        </div>
+                    </div>
+                </header>
+
+                <div class="search d-none d-xl-block text-right">
+                    <input class="field-search" type="text" placeholder="Pesquisar Innopedia">
+                    <button class="lupa"></button>
+                </div>
+       
+                <div class="titulo text-left mt-5 sec-home ">
+                    <h2 class=" p-0 pb-3">DEMOGRÁFICOS <a class="voltar float-right" href=""><span>‹</span> Voltar</a></h2>
+                </div>
+
+
+                <section class="section one content-table ">
+                    
+                    <div class="tables">
+                        <table id="customers">
+                            <tr>
+                              <th>ÁREA</th>
+                              <th align="center" width="100">%</th>
+                              <th align="center" width="100">Nº pessoas</th>
+                            </tr>
+                            <tr>
+                              <td>CDA - Gerência Geral de Vendas Mercado Auto</td>
+                              <td align="center">2,0%</td>
+                              <td align="center">2</td>
+                            </tr>
+                            <tr>
+                              <td>CDL - Gerência Geral de Logística</td>
+                              <td align="center">2,0%</td>
+                              <td align="center">2</td>
+                            </tr>
+                            <tr>
+                              <td>CDP - Gerência Geral de Mercado e Planejamento Integrado</td>
+                              <td align="center">3,0%</td>
+                              <td align="center">3</td>
+                            </tr>
+                            <tr>
+                              <td>CDV - Gerência Geral de Vendas</td>
+                              <td align="center">5,0%</td>
+                              <td align="center">5</td>
+                            </tr>
+                            <tr>
+                              <td>FDF - Gerência Geral de Finanças e Estratégia</td>
+                              <td align="center">1,0%</td>
+                              <td align="center">1</td>
+                            </tr>
+                            <tr>
+                              <td>FDR - Gerência Geral de Governança, Riscos & Compliance</td>
+                              <td align="center">1,0%</td>
+                              <td align="center">1</td>
+                            </tr>
+                            <tr>
+                              <td>FDT - Gerência Geral de Tecnologia da Informação, Automação e Inovação Digital</td>
+                              <td align="center">5,0%</td>
+                              <td align="center">6</td>
+                            </tr>
+                            <tr>
+                              <td>IDI - Gerência Geral de Estratégia Industrial, Engenharia e Manutenção Central</td>
+                              <td align="center">1,0%</td>
+                              <td align="center">1</td>
+                            </tr>
+                            <tr>
+                              <td>IDK - Gerência Geral de Pesquisa e Desenvolvimento</td>
+                              <td align="center">2,0%</td>
+                              <td align="center">2</td>
+                            </tr>
+                            <tr>
+                              <td>IDV - Gerência Geral ArcelorMittal Vega</td>
+                              <td align="center">7,9%</td>
+                              <td align="center">8</td>
+                            </tr>
+                            
+                                   <tr>
+                              <td>IVA - Gerência de Recursos Humanos e Meio Ambiente</td>
+                              <td align="center">7,9%</td>
+                              <td align="center">8</td>
+                            </tr>
+                            
+                                   <tr>
+                              <td>IVE - Gerência de Engenharia e Manutenção Central</td>
+                              <td align="center">9,9%</td>
+                              <td align="center">10</td>
+                            </tr>
+                            
+                                   <tr>
+                              <td>IVM - Gerência de Metalurgia de Vega</td>
+                              <td align="center">8,9%</td>
+                              <td align="center">9</td>
+                            </tr>
+                            
+                                   <tr>
+                              <td>IVG - Gerência de Produção de Bobinas Galvanizadas</td>
+                              <td align="center">19,8%</td>
+                              <td align="center">20</td>
+                            </tr>
+                            
+                                   <tr>
+                              <td>IVL - Gerência de Produção de Bobinas Laminadas a Frio</td>
+                              <td align="center">13,9%</td>
+                              <td align="center">14</td>
+                            </tr>
+                            
+                                   <tr>
+                              <td>IVX - Gerência de Expansão da ArcelorMittal Vega</td>
+                              <td align="center">4,0%</td>
+                              <td align="center">4</td>
+                            </tr>
+                            
+                                   <tr>
+                              <td>SDA - Gerência Geral de Capex, Refratários, Energia, MRO e Planos</td>
+                              <td align="center">4,0%</td>
+                              <td align="center">4</td>
+                            </tr>
+                            
+                            <tr>
+                              <td>SDI - Gerência Geral de Estratégia e Inteligência de Compras, Comercio Exterior e Gestão de Fornecedores</td>
+                              <td align="center">1,0%</td>
+                              <td align="center">1</td>
+                            </tr>
+
+                            <tr>
+                                <td> </td>
+                                <td class="tdc" align="center">TOTAL</td>
+                                <td class="tdc" align="center">101</td>
+                              </tr>
+                          </table>  
+                    </div>
+
+                    <div class="tables">
+                        <table id="customers">
+                            <tr>
+                              <th> CARGOS</th>
+                              <th align="center" width="100">%</th>
+                              <th align="center" width="100">Nº pessoas</th>
+                            </tr>
+                            <tr>
+                              <td>Gerente Geral / Gerente</td>
+                              <td align="center">3,0%</td>
+                              <td align="center">3</td>
+                            </tr>
+                            <tr>
+                              <td>Gerente de Área</td>
+                              <td align="center">8,9%</td>
+                              <td align="center">9</td>
+                            </tr>
+                            <tr>
+                              <td>Supervisor</td>
+                              <td align="center">12.9%</td>
+                              <td align="center">13</td>
+                            </tr>
+                            <tr>
+                              <td>Nível Superior - Executivo</td>
+                              <td align="center">4,0%</td>
+                              <td align="center">4</td>
+                            </tr>
+                            <tr>
+                              <td>Nível Superior - Especialista</td>
+                              <td align="center">56,4%</td>
+                              <td align="center">57</td>
+                            </tr>
+                            <tr>
+                              <td>Nível Superior - Analista</td>
+                              <td align="center">14,9%</td>
+                              <td align="center">15</td>
+                            </tr>
+                            
+                            <tr>
+                                <td> </td>
+                                <td class="tdc" align="center">TOTAL</td>
+                                <td class="tdc" align="center">101</td>
+                              </tr>
+                          </table>  
+                    </div>
+
+                    <div class="tables text-center">
+                        <h2>FAIXA ETÁRIA</h2>
+                      <img src="assets/graficos/grafic1.png" class="img-fluid">
+                    </div>
+
+                    <div class="tables text-center">
+                        <h2>TEMPO DE EMPRESA</h2>
+                        <img src="assets/graficos/grafic2.png" class="img-fluid">
+                      </div>
+
+                      <div class="tables text-center">
+                        <h2>FORMAÇÃO ACADÊMICA</h2>
+                        <img src="assets/graficos/grafic3.png" class="img-fluid">
+                      </div>
+
+                      <div class="tables text-center">
+                        <h2>GÊNERO</h2>
+                        <img src="assets/graficos/grafic4.png" class="img-fluid">
+                      </div>
+                </section>
+
+
+
+                <div class="row">
+                    <div class="col-lg-12 text-center mt-4">
+                        <a class="voltar-b" href=""><span>‹</span> Voltar</a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="assets/js/jquery-3.3.1.min.js">
+    </script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous">
+    </script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous">
+    </script>
+    <script src="assets/js/utils.js" type="text/javascript"></script>
+</body>
+
+</html>

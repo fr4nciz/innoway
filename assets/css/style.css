@@ -6844,6 +6844,10 @@ a.text-dark:hover, a.text-dark:focus {
   --lg-pad-left: 49px;
   --lg-pad-top: 30px;
   fill: #f58b40; }
+  .own-report .own {
+    display: block; }
+  .own-report .inno {
+    display: none; }
 
 .partner-report {
   --logo: url(../img/innoway-logo-partner.svg);
@@ -6874,6 +6878,10 @@ a.text-dark:hover, a.text-dark:focus {
   --flow-font-color: #8FA720;
   --lg-pad-left: 23px;
   --lg-pad-top: 50px; }
+  .partner-report .own {
+    display: none; }
+  .partner-report .inno {
+    display: block; }
 
 strong {
   font-weight: bold; }
@@ -7004,6 +7012,7 @@ header {
 .main-header {
   display: flex;
   justify-content: space-between;
+  justify-content: center;
   align-items: center;
   height: 124px;
   background-color: #E5E5E5;
@@ -7213,8 +7222,7 @@ body {
       transition: all 0.3s; }
   .sidebar_r ul.list-unstyled li.active > a {
     color: #fff;
-    background: var(--green-400);
-    font-weight: 800; }
+    background: var(--primary-font-color); }
 
 a[aria-expanded="true"] {
   color: #fff;
@@ -7789,6 +7797,9 @@ section.box-black {
     color: var(--primary-font-color);
     font-weight: 800;
     margin-bottom: 0; }
+
+.three {
+  margin: 20px 0; }
 
 @media screen and (max-width: 1200px) {
   .container-text p {
@@ -9266,10 +9277,52 @@ section.intra {
   margin: 0 auto;
   text-align: center; }
 
+.content-table {
+  padding: 30px; }
+
+.tables {
+  padding: 30px;
+  background: #fff;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  margin: 20px 10px; }
+  .tables h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px 0 30px 0; }
+  .tables #customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%; }
+  .tables #customers td, .tables #customers th {
+    border: 1px solid #ddd; }
+    .tables #customers td.tdc, .tables #customers th.tdc {
+      background: var(--primary-font-color);
+      font-weight: 800; }
+  .tables #customers th:first-child {
+    padding: 5px 0 5px 15px;
+    text-align: left; }
+  .tables #customers td {
+    font-size: 13px;
+    padding: 6px 6px 6px 15px; }
+  .tables #customers tr:nth-child(even) {
+    background-color: #f2f2f2; }
+  .tables #customers tr:hover {
+    background-color: #ddd; }
+  .tables #customers th {
+    text-align: center;
+    background-color: var(--primary-font-color);
+    color: white; }
+
 @media only screen and (max-width: 1280px) {
   .small {
     max-width: 897px;
-    width: 100%; } }
+    width: 100%; }
+
+  .header-meia-pizza p {
+    font-size: 11px; } }
 @media only screen and (max-width: 1200px) {
   .search {
     padding-top: 0;
@@ -9481,6 +9534,9 @@ section.intra {
   .box-black-one {
     margin: 0; } }
 @media only screen and (max-width: 768px) {
+  .content-table {
+    padding: 10px; }
+
   .box-black-one {
     margin: 20px 0 0 0; }
 
@@ -9527,7 +9583,9 @@ section.intra {
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
-    width: 100%; }
+    width: 100%;
+    text-align: center;
+    align-items: center; }
 
   .progress-grid .bdr {
     border: none; }
@@ -9820,6 +9878,9 @@ section.intra {
     margin: 0;
     padding: 20px 15px 0 15px; } }
 @media only screen and (max-width: 500px) {
+  header.small {
+    position: fixed; }
+
   .dia .content-pizza .grafic-pizza img {
     padding: 10%; }
 
@@ -9872,6 +9933,18 @@ section.intra {
     padding: 10px;
     border-radius: 15px; } }
 @media only screen and (max-width: 500px) {
+  .flow-header {
+    padding: 0 0 0 4px; }
+
+  .flow-header span:nth-child(2) {
+    padding: 3px 10px 0 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    text-align: center; }
+
   .boxer1 h2 span {
     margin-right: 40px; }
 
@@ -9916,7 +9989,7 @@ section.intra {
     text-align: left; }
 
   .score-header {
-    font-size: 20px; }
+    font-size: 24px; }
 
   .innovation-header {
     font-size: 9px; }
@@ -9925,7 +9998,7 @@ section.intra {
     width: 50%; }
     .arce img {
       position: relative;
-      right: 30px;
+      left: 52px;
       top: -10px;
       width: 100%; }
 

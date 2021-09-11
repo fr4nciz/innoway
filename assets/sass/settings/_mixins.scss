@@ -99,6 +99,13 @@
    --lg-pad-left: 49px;
    --lg-pad-top: 30px;
    fill: #f58b40;
+   .own {
+      display: block;
+   }
+
+   .inno {
+      display: none;
+   }
 }
 
 .partner-report {
@@ -130,5 +137,13 @@
    --flow-font-color: #8FA720;
    --lg-pad-left: 23px;
    --lg-pad-top: 50px;
+
+   .own {
+      display: none;
+   }
+
+   .inno {
+      display: block;
+   }
 }
 

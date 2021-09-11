@@ -3,6 +3,10 @@
         max-width: 897px;
         width: 100%;
     }
+
+    .header-meia-pizza p {
+         font-size: 11px;
+    }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -301,6 +305,10 @@
 
 @media only screen and (max-width: 768px) {
 
+    .content-table {
+        padding: 10px;
+    }
+
     .box-black-one {
         margin:20px 0 0 0;
     }
@@ -358,6 +366,8 @@
         flex-wrap: nowrap;
         justify-content: center;
         width: 100%;
+        text-align: center;
+        align-items: center;
     }
 
     .progress-grid .bdr {
@@ -725,6 +735,9 @@
 }
 
 @media only screen and (max-width: 500px) {
+    header.small {
+        position: fixed;
+    }
 
     .dia .content-pizza .grafic-pizza img {
           padding: 10%;
@@ -800,6 +813,21 @@
 
 @media only screen and (max-width: 500px) {
 
+    .flow-header { 
+        padding: 0 0 0 4px;
+      
+    }
+
+    .flow-header span:nth-child(2) {
+        padding: 3px 10px 0 5px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100%;
+        text-align: center;
+    }
+
     .boxer1 h2 span {
     
         margin-right: 40px;
@@ -853,7 +881,7 @@
           text-align: left;
     }
     .score-header {
-        font-size: 20px;
+        font-size: 24px;
     }
         
     .innovation-header {
@@ -865,9 +893,9 @@
         width: 50%;
         img {
             position: relative;
-    right: 30px;
-    top: -10px;
-    width: 100%
+            left: 52px;
+            top: -10px;
+            width: 100%
         }
     }
 
