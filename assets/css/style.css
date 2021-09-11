@@ -7058,30 +7058,41 @@ header {
   color: #fff;
   text-transform: uppercase;
   font-size: 10px;
-  font-weight: 600;
+  font-weight: normal;
   border-right: 1px solid #999999;
-  padding: 5px 15px 0 15px; }
+  padding: 5px 15px 0 15px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  max-height: 40px;
+  line-height: 14px; }
 
 .innovation-header p {
   font-size: 15px;
   color: var(--primary-font-color);
   text-transform: uppercase;
-  padding: 3px 0 0 0; }
+  padding: 3px 0 0 0;
+  font-weight: 600; }
 
 .score-header {
   color: var(--primary-font-color);
   text-transform: uppercase;
   font-size: 29px;
   font-weight: 700;
-  padding: 20px 10px 6px 28px !important;
-  line-height: 60%; }
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .score-header span {
+    height: 35px;
+    margin-top: 8px; }
 
 .score-header p {
   font-size: 8px;
   color: #fff;
   font-weight: 500;
   text-transform: uppercase;
-  padding: 2px 15px 0 5px; }
+  padding: 0; }
 
 .peaple-header {
   display: flex;
@@ -9426,7 +9437,7 @@ section.intra {
     padding: 0 0 0 15px; }
 
   .innovation-header {
-    padding: 5px 10px 0 10px; }
+    padding: 0 10px 0 10px; }
 
   .peaple-header span:nth-child(2) {
     padding: 0 15px 0 5px; }
@@ -9525,11 +9536,19 @@ section.intra {
     font-size: 22px;
     padding: 10px 0; }
 
+  #sidebar {
+    position: fixed;
+    z-index: 1200;
+    height: 100%;
+    overflow: auto;
+    top: 0; }
+
   #sidebar.active {
     position: fixed;
     z-index: 1200;
     height: 100%;
-    overflow: auto; }
+    overflow: auto;
+    top: 0; }
 
   .box-black-one {
     margin: 0; } }
@@ -9585,7 +9604,8 @@ section.intra {
     justify-content: center;
     width: 100%;
     text-align: center;
-    align-items: center; }
+    align-items: center;
+    max-width: 100px; }
 
   .progress-grid .bdr {
     border: none; }
@@ -9702,8 +9722,8 @@ section.intra {
     flex-wrap: nowrap; }
 
   .innovation-header {
-    font-size: 7px;
-    padding: 5px 8px 0 8px; }
+    font-size: 10px;
+    padding: 0px 8px 0 8px; }
 
   .score-header {
     font-size: 15px;
@@ -9718,6 +9738,11 @@ section.intra {
     margin: 4px;
     text-align: center;
     padding: 0 !important; }
+    .score-header span {
+      height: 24px;
+      margin-top: 4px;
+      font-size: 25px;
+      padding: 7px; }
 
   .header-content {
     display: flex;
@@ -9729,7 +9754,7 @@ section.intra {
     justify-content: flex-start;
     align-items: center;
     font-size: 8px;
-    padding: 0 0 0 10px;
+    padding: 0 0 0 5px;
     flex-wrap: wrap;
     align-content: stretch; }
 
@@ -9876,8 +9901,32 @@ section.intra {
 
   .dia .txt-pizza {
     margin: 0;
-    padding: 20px 15px 0 15px; } }
+    padding: 20px 15px 0 15px; }
+
+  .progress-grid .prg.actv .val {
+    left: 43%; }
+
+  .progress-grid .prg.actv .val {
+    font-size: 1.6rem;
+    top: -40px; }
+
+  .progress-grid .prg p {
+    font-size: 14px;
+    width: 100%;
+    margin-bottom: 38px; }
+
+  .progress-grid .prg .c_bar {
+    font-size: 14px; }
+
+  .progress-grid .prg.bdr p {
+    margin-bottom: 10px; }
+
+  .progress-grid .prg p.psec {
+    margin-bottom: 10px; } }
 @media only screen and (max-width: 500px) {
+  .arce {
+    max-width: 100%; }
+
   header.small {
     position: fixed; }
 

@@ -153,7 +153,7 @@
 
     .innovation-header {
 
-        padding: 5px 10px 0 10px;
+        padding: 0 10px 0 10px;
     }
 
     .peaple-header span:nth-child(2) {
@@ -291,12 +291,20 @@
         font-size: 22px;
         padding: 10px 0;
     }
+    #sidebar {
+        position: fixed;
+        z-index: 1200;
+        height: 100%;
+        overflow: auto;
+        top: 0;
+    }
 
     #sidebar.active {
         position: fixed;
         z-index: 1200;
         height: 100%;
         overflow: auto;
+        top: 0;
     }
     .box-black-one {
         margin:0 ;
@@ -368,6 +376,7 @@
         width: 100%;
         text-align: center;
         align-items: center;
+        max-width: 100px;
     }
 
     .progress-grid .bdr {
@@ -518,8 +527,9 @@
     }
 
     .innovation-header {
-        font-size: 7px;
-        padding: 5px 8px 0 8px;
+        font-size: 10px;
+        padding: 0px 8px 0 8px;
+    
     }
 
     .score-header {
@@ -537,6 +547,12 @@
         margin: 4px;
         text-align: center;
         padding: 0 !important;
+        span {
+            height: 24px;
+            margin-top: 4px;
+            font-size: 25px;
+            padding: 7px;
+        }
     }
 
     .header-content {
@@ -552,7 +568,7 @@
         justify-content: flex-start;
         align-items: center;
         font-size: 8px;
-        padding: 0 0 0 10px;
+        padding: 0 0 0 5px;
         flex-wrap: wrap;
         align-content: stretch;
     }
@@ -731,10 +747,38 @@
         margin: 0;
         padding:  20px 15px 0 15px;
     }
+    .progress-grid .prg.actv .val {
+        left: 43%;
+    }
+    .progress-grid .prg.actv .val {
+      font-size: 1.6rem;   
+      top: -40px;
+    }
+
+    .progress-grid .prg p {
+        font-size: 14px;
+        width: 100%;
+        margin-bottom: 38px;
+    }
+
+    .progress-grid .prg .c_bar {
+        font-size: 14px;
+    }
+
+    .progress-grid .prg.bdr p {
+        margin-bottom: 10px;
+    }
+
+    .progress-grid .prg p.psec{
+        margin-bottom: 10px;
+    }
 
 }
 
 @media only screen and (max-width: 500px) {
+    .arce {
+        max-width: 100%;
+    }
     header.small {
         position: fixed;
     }
@@ -812,6 +856,7 @@
 }
 
 @media only screen and (max-width: 500px) {
+ 
 
     .flow-header { 
         padding: 0 0 0 4px;
