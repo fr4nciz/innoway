@@ -460,8 +460,12 @@
         text-align: center;
         flex-direction: column;
         padding-bottom: 20px;
+        width: 100%;
     }
 
+    .tables  {
+        padding: 15px;
+    }
     .third-header h2 {
         font-size: 20px;
     }
@@ -776,6 +780,9 @@
 }
 
 @media only screen and (max-width: 500px) {
+    .text-infinty {
+        border: none;
+    }
     .arce {
         max-width: 100%;
     }
