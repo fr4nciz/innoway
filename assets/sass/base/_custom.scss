@@ -1761,3 +1761,26 @@ section.intra {
 .span-bl {
     color: white !important;
 }
+
+.bg-modal {
+    background-color: #242424;
+    .modal-header, .modal-footer {
+        border:none;
+        h5{
+            color: #fff;
+        }
+        .close {
+            color: #fff;
+        }
+    }
+    .modal-body {
+        color: var(--primary-font-color);
+         a {
+            color: var(--primary-font-color);
+            text-decoration: underline;
+            margin: 10px 0;
+            display: block;
+        }
+      
+    }
+}

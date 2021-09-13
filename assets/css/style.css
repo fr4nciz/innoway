@@ -9361,6 +9361,22 @@ section.intra {
 .span-bl {
   color: white !important; }
 
+.bg-modal {
+  background-color: #242424; }
+  .bg-modal .modal-header, .bg-modal .modal-footer {
+    border: none; }
+    .bg-modal .modal-header h5, .bg-modal .modal-footer h5 {
+      color: #fff; }
+    .bg-modal .modal-header .close, .bg-modal .modal-footer .close {
+      color: #fff; }
+  .bg-modal .modal-body {
+    color: var(--primary-font-color); }
+    .bg-modal .modal-body a {
+      color: var(--primary-font-color);
+      text-decoration: underline;
+      margin: 10px 0;
+      display: block; }
+
 @media only screen and (max-width: 1280px) {
   .small {
     max-width: 897px;

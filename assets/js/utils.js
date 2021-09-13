@@ -6,13 +6,16 @@ $(document).on("scroll", function () {
            } else {
        
             $("header").addClass("small");
-           }
+                   }
 	
         $('.home').addClass("mghome");
+       
+        
         $('.sec-home').addClass("mghome");
 	
 	} else {
 		$("header").removeClass("small");
+
         $('.home').removeClass("mghome");
         $('.sec-home').removeClass("mghome");
 	}
@@ -20,6 +23,10 @@ $(document).on("scroll", function () {
 
 
 $(document).ready(function () {
+
+  $(".lupa").click(function() {
+    $('#modal-busca').modal('show');
+  });
 
 	$('#sidebarCollapse').on('click', function () {
 		$('#sidebar').toggleClass('active');
@@ -62,3 +69,7 @@ function changeOwner() {
 
 }
 
+
+$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})
